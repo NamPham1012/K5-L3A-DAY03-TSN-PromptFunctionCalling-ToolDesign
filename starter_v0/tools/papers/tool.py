@@ -8,7 +8,7 @@ from typing import Any
 
 import requests
 
-from tools._shared import TIMEOUT, err
+from tools._shared import TIMEOUT, clamp_int, err
 
 
 ARXIV_API_URL = "https://export.arxiv.org/api/query"
@@ -61,7 +61,9 @@ def _entry_text(entry: ET.Element, path: str, namespaces: dict[str, str]) -> str
 
 def arxiv_search(query: str = "", max_results: int = 5, sort_by: str = "relevance") -> dict[str, Any]:
     try:
-        max_results = max(1, min(int(max_results or 5), 10))
+        if not (query or "").strip():
+            raise ValueError("query must not be empty")
+        max_results = clamp_int(max_results, default=5, high=10)  # "0" and 0 both -> default
         sort_by = sort_by if sort_by in {"relevance", "lastUpdatedDate", "submittedDate"} else "relevance"
         params = {
             "search_query": _arxiv_search_query(query),

@@ -3,7 +3,7 @@ name: papers
 track: bonus
 kind: live_api
 provider: arXiv API
-requires_env: [ARXIV_USER_AGENT]
+requires_env: []   # optional ARXIV_USER_AGENT overrides the default User-Agent
 inputs: [query, max_results, sort_by]
 outputs: [items, total_results]
 side_effect: false

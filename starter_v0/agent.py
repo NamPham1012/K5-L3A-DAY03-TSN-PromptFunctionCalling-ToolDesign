@@ -5,6 +5,7 @@ from typing import Any
 
 from providers.base import Provider, ToolCall
 from tools import TOOL_FUNCTIONS
+from tools.send.tool import guard_send_call, send_telegram
 
 
 @dataclass
@@ -42,6 +43,10 @@ class ResearchAgent:
             func = TOOL_FUNCTIONS.get(call.name)
             if not func:
                 results.append({"tool": call.name, "error": "unknown_tool"})
+                continue
+            blocked = guard_send_call(call.args, messages) if func is send_telegram else None
+            if blocked:
+                results.append({"tool": call.name, "args": call.args, "result": blocked})
                 continue
             try:
                 result = func(**call.args)

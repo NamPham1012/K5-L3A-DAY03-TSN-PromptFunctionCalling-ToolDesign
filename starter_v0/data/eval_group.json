@@ -19,16 +19,7 @@
       "failure_type": "wrong_arg_value",
       "expect": {"tool_calls": [{"name": "wiki", "args": {"lang": "vi"}}]},
       "metadata": {"skill": "wiki_lang_arg", "difficulty": "easy", "what_it_tests": "User yêu cầu Wikipedia tiếng Việt → wiki với lang=vi (không để mặc định en)."}
-  "description": "10 case: 5 single-turn (G_S01–G_S05), 5 multi-turn (G_M01–G_M05), đánh giá routing, đối số, ngữ cảnh, ranh giới xác nhận và thông tin thiếu. Khi thành viên B hoàn tất tool mới, bổ sung hoặc thay thế một case để kiểm tra tool mới.",
-  "allowed_failure_types": [
-    "wrong_tool",
-    "wrong_arg_value",
-    "wrong_boundary",
-    "unnecessary_tool",
-    "out_of_scope",
-    "missing_info"
-  ],
-  "cases": [
+    },
     {
       "id": "G_S01_timeline_specific_limit",
       "phase": "B",

@@ -1,0 +1,1143 @@
+{
+  "transcript_id": "v7_openrouter_20261110T145921729126",
+  "version": "v7",
+  "artifact_version": "v7+p719a9ac99f61+t2c4b73356f32",
+  "prompt_hash": "719a9ac99f61ef6da6c511f8ecee0f85be608e4310feb311305a353c1184225d",
+  "tools_hash": "2c4b73356f3218ded2f5b898883c72c6298156ede29543117c5affc1398f9594",
+  "provider": "openrouter",
+  "model": "openai/gpt-4o-mini",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-11-10T14:59:21",
+  "updated_at": "2026-11-10T15:07:01",
+  "turns": [
+    {
+      "turn_index": 1,
+      "started_at": "2026-11-10T14:59:21",
+      "user": "Cho mình các tweet top về OpenAI",
+      "status": "answered",
+      "assistant_text": "Here are the top tweets about OpenAI:\n\n1. **@Bober_smart**  \n   *Date:* Fri Aug 21 17:50:09 +0000 2026  \n   *Summary:* I still don't understand why everyone is not using this yet. Thanks to it, a year ago I increased my income to 17,000 dollars a month. Andrey Karpathy, co-founder of OpenAI, published a simple idea that got 16 million views: stop using AI to write code, use it to build a second brain.  \n   *[Read more](https://x.com/Bober_smart/status/2090859011365056720)*  \n   *Favorites:* 11,360 | *Retweets:* 1,466 | *Views:* 2,888,564\n\n2. **@Bober_smart**  \n   *Date:* Sat Nov 07 14:11:07 +0000 2026  \n   *Summary:* I still don't understand why everyone is not using this yet. Thanks to it, a year ago I increased my income to 15,000 dollars a month. Andrey Karpathy, co-founder of OpenAI, published a simple idea that got 25 million views: stop using AI to write code, use it to build a second brain.  \n   *[Read more](https://x.com/Bober_smart/status/2119070145284841481)*  \n   *Favorites:* 1,181 | *Retweets:* 127 | *Views:* 95,304\n\n3. **@OpenAI**  \n   *Date:* Thu Nov 05 17:09:13 +0000 2026  \n   *Summary:* Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, and Cisco are already putting it to work.  \n   *[Read more](https://x.com/OpenAI/status/2118390190246879554)*  \n   *Favorites:* 21,422 | *Retweets:* 2,001 | *Views:* 4,122,521\n\n4. **@OpenAIDevs**  \n   *Date:* Wed Nov 04 23:34:28 +0000 2026  \n   *Summary:* Today, we’re bringing GPT-Image-2.6 to Codex and the API. Image-2.6 Flare and Sunburst, our two new API image models, generate images 50% faster than before.  \n   *[Read more](https://x.com/OpenAIDevs/status/2118124753340756055)*  \n   *Favorites:* 3,775 | *Retweets:* 317 | *Views:* 384,725\n\n5. **@danikkk_wqs**  \n   *Date:* Mon Nov 09 16:18:24 +0000 2026  \n   *Summary:* I can't f*cking believe this is public: Anthropic, OpenAI, Google, Vercel and Hugging Face put the skills behind their own AI on GitHub, and almost nobody's using them. The companies building AI just handed you the playbook they use themselves.  \n   *[Read more](https://x.com/danikkk_wqs/status/2119826951388991537)*  \n   *Favorites:* 149 | *Retweets:* 13 | *Views:* 17,758\n\nFeel free to ask if you need more information!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "social_search",
+              "args": {
+                "query": "OpenAI",
+                "search_type": "Top",
+                "limit": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "social_search",
+              "args": {
+                "query": "OpenAI",
+                "search_type": "Top",
+                "limit": 5
+              },
+              "result": {
+                "tool": "search_tweets",
+                "query": "OpenAI",
+                "search_type": "Top",
+                "items": [
+                  {
+                    "title": "I still don't understand why everyone is not using this yet. Thanks to it, a year ago I increased my income to 17,000 do",
+                    "summary": "I still don't understand why everyone is not using this yet. Thanks to it, a year ago I increased my income to 17,000 dollars a month\n\nAndrey Karpathy, co-founder of OpenAI, published a simple idea that got 16 million views: stop using AI to write code, use it to build a second brain\n\nYou point Claude Code to a folder, drop any source in there (an article, transcript, PDF) and Claude reads it, links it, and saves it into a living wiki of everything you know. It compounds like interest: the more you feed it, the smarter it gets\n\nHere is the gist:\n\nInstall Obsidian, create a vault, open it in Claude Code\n\nPaste the file with Karpathy's wiki idea and tell Claude to build it\n\nClaude creates three folders: raw for sources, wiki for its pages, CLAUDE\nwhich runs everything\n\nDrop any source into raw and say \"ingest this\"\n\nAsk questions across everything, forever\n\nFive minutes to set up, and you never start with an empty chat again\n\nThe full step-by-step guide is in the article. Save to bookmarks",
+                    "url": "https://x.com/Bober_smart/status/2090859011365056720",
+                    "source": "@Bober_smart",
+                    "date": "Fri Aug 21 17:50:09 +0000 2026",
+                    "metrics": {
+                      "favorites": 11360,
+                      "retweets": 1466,
+                      "views": "2888564"
+                    }
+                  },
+                  {
+                    "title": "I still don't understand why everyone is not using this yet. Thanks to it, a year ago I increased my income to 15,000 do",
+                    "summary": "I still don't understand why everyone is not using this yet. Thanks to it, a year ago I increased my income to 15,000 dollars a month\n\nAndrey Karpathy, co-founder of OpenAI, published a simple idea that got 25 million views: stop using AI to write code, use it to build a second brain\n\nYou point Claude Code to a folder, drop any source in there (an article, transcript, PDF) and Claude reads it, links it, and saves it into a living wiki of everything you know. It compounds like interest: the more you feed it, the smarter it gets\n\nHere is the gist:\n\nInstall Obsidian, create a vault, open it in Claude Code\n\nPaste the file with Karpathy's wiki idea and tell Claude to build it\n\nClaude creates three folders: raw for sources, wiki for its pages, CLAUDE\nwhich runs everything\n\nDrop any source into raw and say ingest this\n\nAsk questions across everything, forever\n\n5 minutes to set up, and you never start with an empty chat again\n\nThe full instructions can be found in the article below",
+                    "url": "https://x.com/Bober_smart/status/2119070145284841481",
+                    "source": "@Bober_smart",
+                    "date": "Sat Nov 07 14:11:07 +0000 2026",
+                    "metrics": {
+                      "favorites": 1181,
+                      "retweets": 127,
+                      "views": "95304"
+                    }
+                  },
+                  {
+                    "title": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignme",
+                    "summary": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment.\n\nThe model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and Cisco—alongside our own at OpenAI—are already putting it to work.\n\nGPT-6 Cyber is available to select Daybreak Red customers and we are expanding access over time.\n\nhttps://t.co/Nzab3Z1Td6",
+                    "url": "https://x.com/OpenAI/status/2118390190246879554",
+                    "source": "@OpenAI",
+                    "date": "Thu Nov 05 17:09:13 +0000 2026",
+                    "metrics": {
+                      "favorites": 21422,
+                      "retweets": 2001,
+                      "views": "4122521"
+                    }
+                  },
+                  {
+                    "title": "Today, we’re bringing GPT-Image-2.6 to Codex and the API.",
+                    "summary": "Today, we’re bringing GPT-Image-2.6 to Codex and the API.\n\nImage-2.6 Flare and Sunburst, our two new API image models, generate images 50% faster than before.\n\nAt medium or high quality, Sunburst keeps details more consistent from one edit to the next. https://t.co/iNhtjqKueJ",
+                    "url": "https://x.com/OpenAIDevs/status/2118124753340756055",
+                    "source": "@OpenAIDevs",
+                    "date": "Wed Nov 04 23:34:28 +0000 2026",
+                    "metrics": {
+                      "favorites": 3775,
+                      "retweets": 317,
+                      "views": "384725"
+                    }
+                  },
+                  {
+                    "title": "I can't f*cking believe this is public: Anthropic, OpenAI, Google, Vercel and Hugging Face put the skills behind their o",
+                    "summary": "I can't f*cking believe this is public: Anthropic, OpenAI, Google, Vercel and Hugging Face put the skills behind their own AI on GitHub, and almost nobody's using them\n\n1. Anthropic's skills · 188K stars\nthe same skills that power Claude's own Word, PDF, PowerPoint and Excel features. Anthropic open-sourced the whole library\nhttps://t.co/VXyzL4QA6A\n\n2. Vercel's agent skills · 33.7K stars\nthe rules Vercel's own engineers use: 40+ React fixes ranked by impact, a UI audit with 100+ checks and a one-command deploy\nhttps://t.co/QXkhnsOewP\n\n3. OpenAI's skills · 28.6K stars\n5 of these ship inside Codex itself. 38 more passed OpenAI's own review: fix failing CI, turn Figma into code, deploy in one step\nhttps://t.co/v9fUwwByH5\n\n4. Google's skills · 21.5K stars\nbuilt and tested inside Google first, then re-checked every week. a skill only ships if it makes the agent faster and more accurate\nhttps://t.co/aqIy9Bjw2s\n\n5. Hugging Face's skills · 11.2K stars\nyour agent fine-tunes models on cloud GPUs, searches datasets and tracks training runs. no ML degree needed\nhttps://t.co/VYNLnyOD5d\n\nthe companies building AI just handed you the playbook they use themselves\n\nsave it before everyone else finds it",
+                    "url": "https://x.com/danikkk_wqs/status/2119826951388991537",
+                    "source": "@danikkk_wqs",
+                    "date": "Mon Nov 09 16:18:24 +0000 2026",
+                    "metrics": {
+                      "favorites": 149,
+                      "retweets": 13,
+                      "views": "17758"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Here are the top tweets about OpenAI:\n\n1. **@Bober_smart**  \n   *Date:* Fri Aug 21 17:50:09 +0000 2026  \n   *Summary:* I still don't understand why everyone is not using this yet. Thanks to it, a year ago I increased my income to 17,000 dollars a month. Andrey Karpathy, co-founder of OpenAI, published a simple idea that got 16 million views: stop using AI to write code, use it to build a second brain.  \n   *[Read more](https://x.com/Bober_smart/status/2090859011365056720)*  \n   *Favorites:* 11,360 | *Retweets:* 1,466 | *Views:* 2,888,564\n\n2. **@Bober_smart**  \n   *Date:* Sat Nov 07 14:11:07 +0000 2026  \n   *Summary:* I still don't understand why everyone is not using this yet. Thanks to it, a year ago I increased my income to 15,000 dollars a month. Andrey Karpathy, co-founder of OpenAI, published a simple idea that got 25 million views: stop using AI to write code, use it to build a second brain.  \n   *[Read more](https://x.com/Bober_smart/status/2119070145284841481)*  \n   *Favorites:* 1,181 | *Retweets:* 127 | *Views:* 95,304\n\n3. **@OpenAI**  \n   *Date:* Thu Nov 05 17:09:13 +0000 2026  \n   *Summary:* Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, and Cisco are already putting it to work.  \n   *[Read more](https://x.com/OpenAI/status/2118390190246879554)*  \n   *Favorites:* 21,422 | *Retweets:* 2,001 | *Views:* 4,122,521\n\n4. **@OpenAIDevs**  \n   *Date:* Wed Nov 04 23:34:28 +0000 2026  \n   *Summary:* Today, we’re bringing GPT-Image-2.6 to Codex and the API. Image-2.6 Flare and Sunburst, our two new API image models, generate images 50% faster than before.  \n   *[Read more](https://x.com/OpenAIDevs/status/2118124753340756055)*  \n   *Favorites:* 3,775 | *Retweets:* 317 | *Views:* 384,725\n\n5. **@danikkk_wqs**  \n   *Date:* Mon Nov 09 16:18:24 +0000 2026  \n   *Summary:* I can't f*cking believe this is public: Anthropic, OpenAI, Google, Vercel and Hugging Face put the skills behind their own AI on GitHub, and almost nobody's using them. The companies building AI just handed you the playbook they use themselves.  \n   *[Read more](https://x.com/danikkk_wqs/status/2119826951388991537)*  \n   *Favorites:* 149 | *Retweets:* 13 | *Views:* 17,758\n\nFeel free to ask if you need more information!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "social_search",
+          "args": {
+            "query": "OpenAI",
+            "search_type": "Top",
+            "limit": 5
+          },
+          "result": {
+            "tool": "search_tweets",
+            "query": "OpenAI",
+            "search_type": "Top",
+            "items": [
+              {
+                "title": "I still don't understand why everyone is not using this yet. Thanks to it, a year ago I increased my income to 17,000 do",
+                "summary": "I still don't understand why everyone is not using this yet. Thanks to it, a year ago I increased my income to 17,000 dollars a month\n\nAndrey Karpathy, co-founder of OpenAI, published a simple idea that got 16 million views: stop using AI to write code, use it to build a second brain\n\nYou point Claude Code to a folder, drop any source in there (an article, transcript, PDF) and Claude reads it, links it, and saves it into a living wiki of everything you know. It compounds like interest: the more you feed it, the smarter it gets\n\nHere is the gist:\n\nInstall Obsidian, create a vault, open it in Claude Code\n\nPaste the file with Karpathy's wiki idea and tell Claude to build it\n\nClaude creates three folders: raw for sources, wiki for its pages, CLAUDE\nwhich runs everything\n\nDrop any source into raw and say \"ingest this\"\n\nAsk questions across everything, forever\n\nFive minutes to set up, and you never start with an empty chat again\n\nThe full step-by-step guide is in the article. Save to bookmarks",
+                "url": "https://x.com/Bober_smart/status/2090859011365056720",
+                "source": "@Bober_smart",
+                "date": "Fri Aug 21 17:50:09 +0000 2026",
+                "metrics": {
+                  "favorites": 11360,
+                  "retweets": 1466,
+                  "views": "2888564"
+                }
+              },
+              {
+                "title": "I still don't understand why everyone is not using this yet. Thanks to it, a year ago I increased my income to 15,000 do",
+                "summary": "I still don't understand why everyone is not using this yet. Thanks to it, a year ago I increased my income to 15,000 dollars a month\n\nAndrey Karpathy, co-founder of OpenAI, published a simple idea that got 25 million views: stop using AI to write code, use it to build a second brain\n\nYou point Claude Code to a folder, drop any source in there (an article, transcript, PDF) and Claude reads it, links it, and saves it into a living wiki of everything you know. It compounds like interest: the more you feed it, the smarter it gets\n\nHere is the gist:\n\nInstall Obsidian, create a vault, open it in Claude Code\n\nPaste the file with Karpathy's wiki idea and tell Claude to build it\n\nClaude creates three folders: raw for sources, wiki for its pages, CLAUDE\nwhich runs everything\n\nDrop any source into raw and say ingest this\n\nAsk questions across everything, forever\n\n5 minutes to set up, and you never start with an empty chat again\n\nThe full instructions can be found in the article below",
+                "url": "https://x.com/Bober_smart/status/2119070145284841481",
+                "source": "@Bober_smart",
+                "date": "Sat Nov 07 14:11:07 +0000 2026",
+                "metrics": {
+                  "favorites": 1181,
+                  "retweets": 127,
+                  "views": "95304"
+                }
+              },
+              {
+                "title": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignme",
+                "summary": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment.\n\nThe model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and Cisco—alongside our own at OpenAI—are already putting it to work.\n\nGPT-6 Cyber is available to select Daybreak Red customers and we are expanding access over time.\n\nhttps://t.co/Nzab3Z1Td6",
+                "url": "https://x.com/OpenAI/status/2118390190246879554",
+                "source": "@OpenAI",
+                "date": "Thu Nov 05 17:09:13 +0000 2026",
+                "metrics": {
+                  "favorites": 21422,
+                  "retweets": 2001,
+                  "views": "4122521"
+                }
+              },
+              {
+                "title": "Today, we’re bringing GPT-Image-2.6 to Codex and the API.",
+                "summary": "Today, we’re bringing GPT-Image-2.6 to Codex and the API.\n\nImage-2.6 Flare and Sunburst, our two new API image models, generate images 50% faster than before.\n\nAt medium or high quality, Sunburst keeps details more consistent from one edit to the next. https://t.co/iNhtjqKueJ",
+                "url": "https://x.com/OpenAIDevs/status/2118124753340756055",
+                "source": "@OpenAIDevs",
+                "date": "Wed Nov 04 23:34:28 +0000 2026",
+                "metrics": {
+                  "favorites": 3775,
+                  "retweets": 317,
+                  "views": "384725"
+                }
+              },
+              {
+                "title": "I can't f*cking believe this is public: Anthropic, OpenAI, Google, Vercel and Hugging Face put the skills behind their o",
+                "summary": "I can't f*cking believe this is public: Anthropic, OpenAI, Google, Vercel and Hugging Face put the skills behind their own AI on GitHub, and almost nobody's using them\n\n1. Anthropic's skills · 188K stars\nthe same skills that power Claude's own Word, PDF, PowerPoint and Excel features. Anthropic open-sourced the whole library\nhttps://t.co/VXyzL4QA6A\n\n2. Vercel's agent skills · 33.7K stars\nthe rules Vercel's own engineers use: 40+ React fixes ranked by impact, a UI audit with 100+ checks and a one-command deploy\nhttps://t.co/QXkhnsOewP\n\n3. OpenAI's skills · 28.6K stars\n5 of these ship inside Codex itself. 38 more passed OpenAI's own review: fix failing CI, turn Figma into code, deploy in one step\nhttps://t.co/v9fUwwByH5\n\n4. Google's skills · 21.5K stars\nbuilt and tested inside Google first, then re-checked every week. a skill only ships if it makes the agent faster and more accurate\nhttps://t.co/aqIy9Bjw2s\n\n5. Hugging Face's skills · 11.2K stars\nyour agent fine-tunes models on cloud GPUs, searches datasets and tracks training runs. no ML degree needed\nhttps://t.co/VYNLnyOD5d\n\nthe companies building AI just handed you the playbook they use themselves\n\nsave it before everyone else finds it",
+                "url": "https://x.com/danikkk_wqs/status/2119826951388991537",
+                "source": "@danikkk_wqs",
+                "date": "Mon Nov 09 16:18:24 +0000 2026",
+                "metrics": {
+                  "favorites": 149,
+                  "retweets": 13,
+                  "views": "17758"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T14:59:38"
+    },
+    {
+      "turn_index": 2,
+      "started_at": "2026-11-10T15:02:13",
+      "user": "Tóm tắt bài này: https://openai.com/blog/gpt-5",
+      "status": "answered",
+      "assistant_text": "Có vẻ như bài viết về GPT-5 trên trang OpenAI không còn tồn tại (404 Not Found). Bạn có thể kiểm tra lại hoặc cung cấp một liên kết khác nếu có.",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "fetch",
+              "args": {
+                "url": "https://openai.com/blog/gpt-5"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "fetch",
+              "args": {
+                "url": "https://openai.com/blog/gpt-5"
+              },
+              "result": {
+                "tool": "read_url",
+                "url": "https://openai.com/blog/gpt-5",
+                "items": [
+                  {
+                    "title": "OpenAI",
+                    "url": "https://openai.com/blog/gpt-5",
+                    "source": "openai.com",
+                    "summary": "OpenAI\n\n# 404\n\nSearch finds no result\n\nThe question still earns its keep\n\nAsk it a new way\n\nby [gpt-6-astra(opens in a new window)](https://chatgpt.com/?surface=work&model=gpt-6-astra-wm&openaicom-did=52cdc990-ae75-4748-bf07-215286d35858&openaicom_referred=true)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Có vẻ như bài viết về GPT-5 trên trang OpenAI không còn tồn tại (404 Not Found). Bạn có thể kiểm tra lại hoặc cung cấp một liên kết khác nếu có.",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "fetch",
+          "args": {
+            "url": "https://openai.com/blog/gpt-5"
+          },
+          "result": {
+            "tool": "read_url",
+            "url": "https://openai.com/blog/gpt-5",
+            "items": [
+              {
+                "title": "OpenAI",
+                "url": "https://openai.com/blog/gpt-5",
+                "source": "openai.com",
+                "summary": "OpenAI\n\n# 404\n\nSearch finds no result\n\nThe question still earns its keep\n\nAsk it a new way\n\nby [gpt-6-astra(opens in a new window)](https://chatgpt.com/?surface=work&model=gpt-6-astra-wm&openaicom-did=52cdc990-ae75-4748-bf07-215286d35858&openaicom_referred=true)"
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T15:02:17"
+    },
+    {
+      "turn_index": 3,
+      "started_at": "2026-11-10T15:03:31",
+      "user": "Tin công nghệ tuần này",
+      "status": "answered",
+      "assistant_text": "Dưới đây là các tin công nghệ nổi bật trong tuần này:\n\n1. **[Siri AI sắp hỗ trợ tiếng Việt, Galaxy Z Fold8 bán chạy sau khi iPhone gập ra mắt](https://viettimes.vn/tin-nong-cong-nghe-411-siri-ai-sap-ho-tro-tieng-viet-z-fold8-ban-chay-sau-khi-iphone-gap-ra-mat-post207917.html)**  \n   Tin nóng công nghệ ngày 3/11: Kính thiên văn NASA nặng 1,5 tấn sắp rơi xuống Trái Đất. iPhone gập tiếp tục khan hàng, ba mẫu iPhone 8 năm tuổi vẫn được cập nhật bảo mật, và một người đàn ông điều khiển xe lăn bằng suy nghĩ.\n\n2. **[Tin nóng công nghệ 9/11: iPhone Air 2 có thể được bổ sung camera thứ 2](https://vietbao.vn/tin-nong-cong-nghe-911-iphone-air-2-co-the-duoc-bo-sung-camera-thu-2-615163.html)**  \n   iPhone Air 2 có thể có camera thứ 2, Samsung hé lộ smartphone màn hình trượt, và chuyên gia Tencent cảnh báo nguy cơ AI bị lợi dụng để phát triển vũ khí sinh học.\n\n3. **[Công nghệ lượng tử đặt an ninh thông tin, dữ liệu trước nguy cơ mới](https://dangcongsan.vn/cantho/nghi-quyet-57-nq-tw/cong-nghe-luong-tu-dat-an-ninh-thong-tin-du-lieu-truoc-nguy-co-moi-.html)**  \n   Công nghệ lượng tử đang được nhiều quốc gia xác định là lĩnh vực có ý nghĩa chiến lược đối với chủ quyền số và an ninh quốc gia.\n\n4. **[Nghệ An khai giảng 2 lớp đào tạo đại học Công nghệ thông tin cho 76 cán bộ, công chức cấp xã](https://baonghean.vn/nghe-an-khai-giang-2-lop-dao-tao-dai-hoc-cong-nghe-thong-tin-cho-76-can-bo-cong-chuc-cap-xa-10355469.html)**  \n   Khóa học nhằm trang bị kiến thức và kỹ năng cho cán bộ, công chức cấp xã để giải quyết các vấn đề thực tiễn về công nghệ thông tin và chuyển đổi số.\n\n5. **[Nhân viên công nghệ thông tin tại trạm y tế thuộc nhóm hợp đồng nào?](https://doisongphapluat.com.vn/nhan-vien-cong-nghe-thong-tin-tai-tram-y-te-thuoc-nhom-hop-dong-nao-a737579.html)**  \n   Bài viết thảo luận về việc xác định công việc Công nghệ thông tin tại Trạm Y tế và các quy định liên quan.\n\nNếu bạn cần thêm thông tin chi tiết về bất kỳ tin nào, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "lookup",
+              "args": {
+                "query": "tin công nghệ",
+                "topic": "news",
+                "timeframe": "week",
+                "max_results": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "lookup",
+              "args": {
+                "query": "tin công nghệ",
+                "topic": "news",
+                "timeframe": "week",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "tin công nghệ",
+                "topic": "news",
+                "timeframe": "week",
+                "items": [
+                  {
+                    "title": "Siri AI sắp hỗ trợ tiếng Việt, Galaxy Z Fold8 bán chạy sau khi iPhone gập ra mắt",
+                    "url": "https://viettimes.vn/tin-nong-cong-nghe-411-siri-ai-sap-ho-tro-tieng-viet-z-fold8-ban-chay-sau-khi-iphone-gap-ra-mat-post207917.html",
+                    "source": "viettimes.vn",
+                    "summary": "Tin nóng công nghệ 3/11: Kính thiên văn NASA nặng 1,5 tấn sắp rơi xuống Trái Đất  \n\n## Tin nóng công nghệ 3/11: Kính thiên văn NASA nặng 1,5 tấn sắp rơi xuống Trái Đất\n\niPhone gập tiếp tục khan hàng khiến Apple chưa thể đáp ứng nhu cầu, ba mẫu iPhone 8 năm tuổi vẫn được cập nhật bảo mật và người đàn ông điều khiển xe lăn bằng suy nghĩ là những tin công nghệ đáng chú ý ngày 3/11.\n\nPhương tiện bay không người lái (UAV) của Viettel xuất hiện tại lễ diễu binh, diễu hành A80. Ảnh: Viettel. [...] Tin nóng công nghệ 8/11: OPPO sẽ khai tử flagship Find X10 Ultra vì giá RAM tăng?  \n\n## Tin nóng công nghệ 8/11: OPPO sẽ khai tử flagship Find X10 Ultra vì giá RAM tăng?\n\nOPPO được đồn đoán điều chỉnh chiến lược smartphone cao cấp, còn NASA chuẩn bị bước tiến mới trong thám hiểm Mặt Trăng... là những tin công nghệ đáng chú ý ngày 8/11.\n\nDoanh nghiệp tham gia một nửa số nhiệm vụ KHCN, góp 40% vốn  \n\n## Doanh nghiệp tham gia một nửa số nhiệm vụ KHCN, góp 40% vốn [...] Trong một thí nghiệm tại Mỹ, 24 trong số 30 tình nguyện viên cảm nhận được sự hiện diện của người khác khi ngồi trước gương trong phòng tối.\n\nTin nóng công nghệ 7/11: Điện thoại Android nhắc người dùng bỏ quên đồ đạc  \n\n## Tin nóng công nghệ 7/11: Điện thoại Android nhắc người dùng bỏ quên đồ đạc\n\nAndroid bổ sung cảnh báo khi người dùng bỏ quên đồ, Apple có thể thay đổi thiết kế nút bấm trên iPhone đời sau... là những tin công nghệ đáng chú ý ngày 7/11.",
+                    "score": 0.67321366
+                  },
+                  {
+                    "title": "Tin nóng công nghệ 9/11: iPhone Air 2 có thể được bổ sung camera thứ 2",
+                    "url": "https://vietbao.vn/tin-nong-cong-nghe-911-iphone-air-2-co-the-duoc-bo-sung-camera-thu-2-615163.html",
+                    "source": "vietbao.vn",
+                    "summary": "Video\n Ảnh\n Infographic\n Emagazine\n\n1. Trang chủ\n2. Khoa học\n3. Tin tức\n\n# Tin nóng công nghệ 9/11: iPhone Air 2 có thể được bổ sung camera thứ 2\n\n13:36 09/11/2026\n\niPhone Air 2 có thể có camera thứ 2, Samsung hé lộ smartphone màn hình trượt, trong khi chuyên gia Tencent cảnh báo nguy cơ AI bị lợi dụng để phát triển vũ khí sinh học là những tin công nghệ đáng chú ý ngày 9/11.\n\nMục lục\n\nMinh Qun\n\n1. iPhone Air 2 có thể được bổ sung camera thứ 2 [...] Vivo đang phát triển mẫu điện thoại gập mới có màn hình nhỏ hơn 6,5 inch nhằm cạnh tranh với iPhone Duo và Samsung Galaxy Z Fold 8. Theo PhoneArena, thông tin bắt nguồn từ tài khoản Digital Chat Station trên mạng xã hội Weibo.\n\nVivo có thể ra mắt điện thoại gập nhỏ gọn để cạnh tranh với iPhone Duo. Ảnh: PhoneArena. [...] Theo Bloomberg, Apple đang thử nghiệm iPhone Air 2 với camera góc siêu rộng bên cạnh camera chính 48 MP. Camera mới có thể giúp người dùng chụp phong cảnh và nhóm đông người linh hoạt hơn. Hãng cũng đang tìm cách cải thiện thời lượng pin nhưng chưa rõ phương án cụ thể.\n\niPhone Air hiện còn một số hạn chế như chỉ có một loa, cổng USB 2 và tốc độ sạc thấp hơn dòng Pro. Theo 9to5Mac, những điểm yếu này có thể khiến người dùng cn nhắc khi giá bán gần bằng iPhone Pro.",
+                    "score": 0.5559422
+                  },
+                  {
+                    "title": "Công nghệ lượng tử đặt an ninh thông tin, dữ liệu trước nguy cơ mới",
+                    "url": "https://dangcongsan.vn/cantho/nghi-quyet-57-nq-tw/cong-nghe-luong-tu-dat-an-ninh-thong-tin-du-lieu-truoc-nguy-co-moi-.html",
+                    "source": "dangcongsan.vn",
+                    "summary": "Công nghệ lượng tử là lĩnh vực khai thác các trạng thái và hiện tượng đặc biệt của vật chất, ánh sáng ở cấp độ nguyên tử để thu thập, xử lý và truyền tải thông tin với độ chính xác cao. Ba trụ cột chính của công nghệ này gồm: Tính toán lượng tử, truyền thông lượng tử và cảm biến lượng tử. [...] Công nghệ lượng tử đang được nhiều quốc gia xác định là lĩnh vực có ý nghĩa chiến lược đối với chủ quyền số, an ninh quốc gia và năng lực cạnh tranh. Các chính phủ và tập đoàn lớn đẩy mạnh đầu tư, xy dựng hệ sinh thái nghiên cứu, phát triển công nghệ, đồng thời tăng cường kiểm soát xuất khẩu thiết bị, vật liệu và phần mềm liên quan.\n\n  \n Phòng nghiên cứu của Đại học Quốc gia Thành phố Hồ Chí Minh. Ảnh: TTXVN [...] Đến năm 2030, Việt Nam hướng tới xy dựng chiến lược quốc gia về công nghệ lượng tử, hoàn thiện cơ chế chính sách thúc đẩy phát triển lĩnh vực này; rà soát toàn bộ các hệ thống trọng yếu và xy dựng lộ trình chuyển đổi sang mật mã hậu lượng tử.\n\nXM/Báo Tin tức và Dn tộc\n\nbaocantho.com.vn\n\nTừ khóa: Công nghệ lượng tử\n\n### Các tin khác\n\nCải thiện chỉ số đổi mới sáng tạo từ công nghệ chiến lược\n\nViệt Nam thuộc nhóm quốc gia cải thiện đáng kể về hạ tầng chất lượng\n\nMang dịch vụ số đến từng người dn",
+                    "score": 0.43136916
+                  },
+                  {
+                    "title": "Nghệ An khai giảng 2 lớp đào tạo đại học Công nghệ thông tin cho 76 cán bộ, công chức cấp xã",
+                    "url": "https://baonghean.vn/nghe-an-khai-giang-2-lop-dao-tao-dai-hoc-cong-nghe-thong-tin-cho-76-can-bo-cong-chuc-cap-xa-10355469.html",
+                    "source": "baonghean.vn",
+                    "summary": "Điểm đáng chú ý của khóa học là sự gắn kết giữa yêu cầu đào tạo chuyên môn với nhu cầu sử dụng cán bộ của địa phương. Việc cử cán bộ đi học không chỉ nhằm bổ sung văn bằng mà hướng đến trang bị kiến thức, kỹ năng để trực tiếp tham mưu, triển khai và giải quyết những vấn đề thực tiễn về công nghệ thông tin, chuyển đổi số tại cơ sở. [...] Việc khai giảng 2 lớp đào tạo đại học Công nghệ thông tin cho cán bộ, công chức cấp xã là bước triển khai cụ thể trong đổi mới công tác đào tạo, bồi dưỡng cán bộ của tỉnh Nghệ An theo hướng xuất phát từ yêu cầu thực tiễn, gắn đào tạo với vị trí việc làm và nhu cầu sử dụng cán bộ. [...] Đối với các học viên, đồng chí đề nghị xác định rõ trách nhiệm học tập, phát huy tinh thần chủ động, cầu thị; gắn kiến thức được đào tạo với những vấn đề thực tiễn đang đặt ra tại cơ quan, đơn vị. Mỗi học viên cần phấn đấu không chỉ sử dụng thành thạo công nghệ mà còn có khả năng tham mưu, đề xuất giải pháp, hướng dẫn đồng nghiệp, trở thành lực lượng nòng cốt thúc đẩy chuyển đổi số tại địa phương.",
+                    "score": 0.380138
+                  },
+                  {
+                    "title": "Nhân viên công nghệ thông tin tại trạm y tế thuộc nhóm hợp đồng nào?",
+                    "url": "https://doisongphapluat.com.vn/nhan-vien-cong-nghe-thong-tin-tai-tram-y-te-thuoc-nhom-hop-dong-nao-a737579.html",
+                    "source": "doisongphapluat.com.vn",
+                    "summary": "Theo đó, việc xác định công việc Công nghệ thông tin tại Trạm Y tế phường thuộc nhóm hợp đồng thực hiện công việc chuyên môn, nghiệp vụ hay nhóm công việc hỗ trợ, phục vụ phải căn cứ vào danh mục vị trí việc làm được cấp có thẩm quyền phê duyệt, bản mô tả công việc, khung năng lực của vị trí việc làm và nhiệm vụ thực tế được giao.\n\nĐề nghị bà Huỳnh Thị Thiên Trang nghiên cứu quy định nêu trên và liên hệ với cơ quan quản lý viên chức nơi công tác để được hướng dẫn, giải quyết. [...] Tag:\n công nghệ /\n công nghệ thông tin /\n bộ nội vụ /\n nhn viên công nghệ /\n nhn viên công nghệ thông tin /\n\nZalo\n\nCảm ơn bạn đã quan tm đến nội dung trên.\n\nHãy tặng sao để tiếp thêm động lực cho tác giả có những bài viết hay hơn nữa.\n\nĐã tặng:\n\nTặng quà tác giả\n\nBÌNH LUẬN\n\n Bình luận sẽ được xét duyệt trước khi đăng. Xin vui lòng gõ tiếng Việt có dấu.\n\nTin liên quan\n\nBộ Khoa học và Công nghệ lý giải việc cấm nhập khẩu smartphone, máy tính, thiết bị công nghệ cũ",
+                    "score": 0.35716435
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Dưới đây là các tin công nghệ nổi bật trong tuần này:\n\n1. **[Siri AI sắp hỗ trợ tiếng Việt, Galaxy Z Fold8 bán chạy sau khi iPhone gập ra mắt](https://viettimes.vn/tin-nong-cong-nghe-411-siri-ai-sap-ho-tro-tieng-viet-z-fold8-ban-chay-sau-khi-iphone-gap-ra-mat-post207917.html)**  \n   Tin nóng công nghệ ngày 3/11: Kính thiên văn NASA nặng 1,5 tấn sắp rơi xuống Trái Đất. iPhone gập tiếp tục khan hàng, ba mẫu iPhone 8 năm tuổi vẫn được cập nhật bảo mật, và một người đàn ông điều khiển xe lăn bằng suy nghĩ.\n\n2. **[Tin nóng công nghệ 9/11: iPhone Air 2 có thể được bổ sung camera thứ 2](https://vietbao.vn/tin-nong-cong-nghe-911-iphone-air-2-co-the-duoc-bo-sung-camera-thu-2-615163.html)**  \n   iPhone Air 2 có thể có camera thứ 2, Samsung hé lộ smartphone màn hình trượt, và chuyên gia Tencent cảnh báo nguy cơ AI bị lợi dụng để phát triển vũ khí sinh học.\n\n3. **[Công nghệ lượng tử đặt an ninh thông tin, dữ liệu trước nguy cơ mới](https://dangcongsan.vn/cantho/nghi-quyet-57-nq-tw/cong-nghe-luong-tu-dat-an-ninh-thong-tin-du-lieu-truoc-nguy-co-moi-.html)**  \n   Công nghệ lượng tử đang được nhiều quốc gia xác định là lĩnh vực có ý nghĩa chiến lược đối với chủ quyền số và an ninh quốc gia.\n\n4. **[Nghệ An khai giảng 2 lớp đào tạo đại học Công nghệ thông tin cho 76 cán bộ, công chức cấp xã](https://baonghean.vn/nghe-an-khai-giang-2-lop-dao-tao-dai-hoc-cong-nghe-thong-tin-cho-76-can-bo-cong-chuc-cap-xa-10355469.html)**  \n   Khóa học nhằm trang bị kiến thức và kỹ năng cho cán bộ, công chức cấp xã để giải quyết các vấn đề thực tiễn về công nghệ thông tin và chuyển đổi số.\n\n5. **[Nhân viên công nghệ thông tin tại trạm y tế thuộc nhóm hợp đồng nào?](https://doisongphapluat.com.vn/nhan-vien-cong-nghe-thong-tin-tai-tram-y-te-thuoc-nhom-hop-dong-nao-a737579.html)**  \n   Bài viết thảo luận về việc xác định công việc Công nghệ thông tin tại Trạm Y tế và các quy định liên quan.\n\nNếu bạn cần thêm thông tin chi tiết về bất kỳ tin nào, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "tin công nghệ",
+            "topic": "news",
+            "timeframe": "week",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "tin công nghệ",
+            "topic": "news",
+            "timeframe": "week",
+            "items": [
+              {
+                "title": "Siri AI sắp hỗ trợ tiếng Việt, Galaxy Z Fold8 bán chạy sau khi iPhone gập ra mắt",
+                "url": "https://viettimes.vn/tin-nong-cong-nghe-411-siri-ai-sap-ho-tro-tieng-viet-z-fold8-ban-chay-sau-khi-iphone-gap-ra-mat-post207917.html",
+                "source": "viettimes.vn",
+                "summary": "Tin nóng công nghệ 3/11: Kính thiên văn NASA nặng 1,5 tấn sắp rơi xuống Trái Đất  \n\n## Tin nóng công nghệ 3/11: Kính thiên văn NASA nặng 1,5 tấn sắp rơi xuống Trái Đất\n\niPhone gập tiếp tục khan hàng khiến Apple chưa thể đáp ứng nhu cầu, ba mẫu iPhone 8 năm tuổi vẫn được cập nhật bảo mật và người đàn ông điều khiển xe lăn bằng suy nghĩ là những tin công nghệ đáng chú ý ngày 3/11.\n\nPhương tiện bay không người lái (UAV) của Viettel xuất hiện tại lễ diễu binh, diễu hành A80. Ảnh: Viettel. [...] Tin nóng công nghệ 8/11: OPPO sẽ khai tử flagship Find X10 Ultra vì giá RAM tăng?  \n\n## Tin nóng công nghệ 8/11: OPPO sẽ khai tử flagship Find X10 Ultra vì giá RAM tăng?\n\nOPPO được đồn đoán điều chỉnh chiến lược smartphone cao cấp, còn NASA chuẩn bị bước tiến mới trong thám hiểm Mặt Trăng... là những tin công nghệ đáng chú ý ngày 8/11.\n\nDoanh nghiệp tham gia một nửa số nhiệm vụ KHCN, góp 40% vốn  \n\n## Doanh nghiệp tham gia một nửa số nhiệm vụ KHCN, góp 40% vốn [...] Trong một thí nghiệm tại Mỹ, 24 trong số 30 tình nguyện viên cảm nhận được sự hiện diện của người khác khi ngồi trước gương trong phòng tối.\n\nTin nóng công nghệ 7/11: Điện thoại Android nhắc người dùng bỏ quên đồ đạc  \n\n## Tin nóng công nghệ 7/11: Điện thoại Android nhắc người dùng bỏ quên đồ đạc\n\nAndroid bổ sung cảnh báo khi người dùng bỏ quên đồ, Apple có thể thay đổi thiết kế nút bấm trên iPhone đời sau... là những tin công nghệ đáng chú ý ngày 7/11.",
+                "score": 0.67321366
+              },
+              {
+                "title": "Tin nóng công nghệ 9/11: iPhone Air 2 có thể được bổ sung camera thứ 2",
+                "url": "https://vietbao.vn/tin-nong-cong-nghe-911-iphone-air-2-co-the-duoc-bo-sung-camera-thu-2-615163.html",
+                "source": "vietbao.vn",
+                "summary": "Video\n Ảnh\n Infographic\n Emagazine\n\n1. Trang chủ\n2. Khoa học\n3. Tin tức\n\n# Tin nóng công nghệ 9/11: iPhone Air 2 có thể được bổ sung camera thứ 2\n\n13:36 09/11/2026\n\niPhone Air 2 có thể có camera thứ 2, Samsung hé lộ smartphone màn hình trượt, trong khi chuyên gia Tencent cảnh báo nguy cơ AI bị lợi dụng để phát triển vũ khí sinh học là những tin công nghệ đáng chú ý ngày 9/11.\n\nMục lục\n\nMinh Qun\n\n1. iPhone Air 2 có thể được bổ sung camera thứ 2 [...] Vivo đang phát triển mẫu điện thoại gập mới có màn hình nhỏ hơn 6,5 inch nhằm cạnh tranh với iPhone Duo và Samsung Galaxy Z Fold 8. Theo PhoneArena, thông tin bắt nguồn từ tài khoản Digital Chat Station trên mạng xã hội Weibo.\n\nVivo có thể ra mắt điện thoại gập nhỏ gọn để cạnh tranh với iPhone Duo. Ảnh: PhoneArena. [...] Theo Bloomberg, Apple đang thử nghiệm iPhone Air 2 với camera góc siêu rộng bên cạnh camera chính 48 MP. Camera mới có thể giúp người dùng chụp phong cảnh và nhóm đông người linh hoạt hơn. Hãng cũng đang tìm cách cải thiện thời lượng pin nhưng chưa rõ phương án cụ thể.\n\niPhone Air hiện còn một số hạn chế như chỉ có một loa, cổng USB 2 và tốc độ sạc thấp hơn dòng Pro. Theo 9to5Mac, những điểm yếu này có thể khiến người dùng cn nhắc khi giá bán gần bằng iPhone Pro.",
+                "score": 0.5559422
+              },
+              {
+                "title": "Công nghệ lượng tử đặt an ninh thông tin, dữ liệu trước nguy cơ mới",
+                "url": "https://dangcongsan.vn/cantho/nghi-quyet-57-nq-tw/cong-nghe-luong-tu-dat-an-ninh-thong-tin-du-lieu-truoc-nguy-co-moi-.html",
+                "source": "dangcongsan.vn",
+                "summary": "Công nghệ lượng tử là lĩnh vực khai thác các trạng thái và hiện tượng đặc biệt của vật chất, ánh sáng ở cấp độ nguyên tử để thu thập, xử lý và truyền tải thông tin với độ chính xác cao. Ba trụ cột chính của công nghệ này gồm: Tính toán lượng tử, truyền thông lượng tử và cảm biến lượng tử. [...] Công nghệ lượng tử đang được nhiều quốc gia xác định là lĩnh vực có ý nghĩa chiến lược đối với chủ quyền số, an ninh quốc gia và năng lực cạnh tranh. Các chính phủ và tập đoàn lớn đẩy mạnh đầu tư, xy dựng hệ sinh thái nghiên cứu, phát triển công nghệ, đồng thời tăng cường kiểm soát xuất khẩu thiết bị, vật liệu và phần mềm liên quan.\n\n  \n Phòng nghiên cứu của Đại học Quốc gia Thành phố Hồ Chí Minh. Ảnh: TTXVN [...] Đến năm 2030, Việt Nam hướng tới xy dựng chiến lược quốc gia về công nghệ lượng tử, hoàn thiện cơ chế chính sách thúc đẩy phát triển lĩnh vực này; rà soát toàn bộ các hệ thống trọng yếu và xy dựng lộ trình chuyển đổi sang mật mã hậu lượng tử.\n\nXM/Báo Tin tức và Dn tộc\n\nbaocantho.com.vn\n\nTừ khóa: Công nghệ lượng tử\n\n### Các tin khác\n\nCải thiện chỉ số đổi mới sáng tạo từ công nghệ chiến lược\n\nViệt Nam thuộc nhóm quốc gia cải thiện đáng kể về hạ tầng chất lượng\n\nMang dịch vụ số đến từng người dn",
+                "score": 0.43136916
+              },
+              {
+                "title": "Nghệ An khai giảng 2 lớp đào tạo đại học Công nghệ thông tin cho 76 cán bộ, công chức cấp xã",
+                "url": "https://baonghean.vn/nghe-an-khai-giang-2-lop-dao-tao-dai-hoc-cong-nghe-thong-tin-cho-76-can-bo-cong-chuc-cap-xa-10355469.html",
+                "source": "baonghean.vn",
+                "summary": "Điểm đáng chú ý của khóa học là sự gắn kết giữa yêu cầu đào tạo chuyên môn với nhu cầu sử dụng cán bộ của địa phương. Việc cử cán bộ đi học không chỉ nhằm bổ sung văn bằng mà hướng đến trang bị kiến thức, kỹ năng để trực tiếp tham mưu, triển khai và giải quyết những vấn đề thực tiễn về công nghệ thông tin, chuyển đổi số tại cơ sở. [...] Việc khai giảng 2 lớp đào tạo đại học Công nghệ thông tin cho cán bộ, công chức cấp xã là bước triển khai cụ thể trong đổi mới công tác đào tạo, bồi dưỡng cán bộ của tỉnh Nghệ An theo hướng xuất phát từ yêu cầu thực tiễn, gắn đào tạo với vị trí việc làm và nhu cầu sử dụng cán bộ. [...] Đối với các học viên, đồng chí đề nghị xác định rõ trách nhiệm học tập, phát huy tinh thần chủ động, cầu thị; gắn kiến thức được đào tạo với những vấn đề thực tiễn đang đặt ra tại cơ quan, đơn vị. Mỗi học viên cần phấn đấu không chỉ sử dụng thành thạo công nghệ mà còn có khả năng tham mưu, đề xuất giải pháp, hướng dẫn đồng nghiệp, trở thành lực lượng nòng cốt thúc đẩy chuyển đổi số tại địa phương.",
+                "score": 0.380138
+              },
+              {
+                "title": "Nhân viên công nghệ thông tin tại trạm y tế thuộc nhóm hợp đồng nào?",
+                "url": "https://doisongphapluat.com.vn/nhan-vien-cong-nghe-thong-tin-tai-tram-y-te-thuoc-nhom-hop-dong-nao-a737579.html",
+                "source": "doisongphapluat.com.vn",
+                "summary": "Theo đó, việc xác định công việc Công nghệ thông tin tại Trạm Y tế phường thuộc nhóm hợp đồng thực hiện công việc chuyên môn, nghiệp vụ hay nhóm công việc hỗ trợ, phục vụ phải căn cứ vào danh mục vị trí việc làm được cấp có thẩm quyền phê duyệt, bản mô tả công việc, khung năng lực của vị trí việc làm và nhiệm vụ thực tế được giao.\n\nĐề nghị bà Huỳnh Thị Thiên Trang nghiên cứu quy định nêu trên và liên hệ với cơ quan quản lý viên chức nơi công tác để được hướng dẫn, giải quyết. [...] Tag:\n công nghệ /\n công nghệ thông tin /\n bộ nội vụ /\n nhn viên công nghệ /\n nhn viên công nghệ thông tin /\n\nZalo\n\nCảm ơn bạn đã quan tm đến nội dung trên.\n\nHãy tặng sao để tiếp thêm động lực cho tác giả có những bài viết hay hơn nữa.\n\nĐã tặng:\n\nTặng quà tác giả\n\nBÌNH LUẬN\n\n Bình luận sẽ được xét duyệt trước khi đăng. Xin vui lòng gõ tiếng Việt có dấu.\n\nTin liên quan\n\nBộ Khoa học và Công nghệ lý giải việc cấm nhập khẩu smartphone, máy tính, thiết bị công nghệ cũ",
+                "score": 0.35716435
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T15:03:45"
+    },
+    {
+      "turn_index": 4,
+      "started_at": "2026-11-10T15:04:48",
+      "user": "tóm tắt cho tôi https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm",
+      "status": "answered",
+      "assistant_text": "Mỹ đã tiến hành sơ tán khẩn cấp các máy bay quân sự khỏi căn cứ không quân Mildenhall ở Anh do phát hiện mối đe dọa tiềm tàng. Hai máy bay tiếp nhiên liệu đã được chuyển đến Đức vào sáng 9/11, cùng với một số máy bay khác trong ngày hôm đó.\n\nCăn cứ Mildenhall và Lakenheath đã được nâng cấp độ an ninh lên cấp độ FPCON, mức độ đe dọa phòng thủ cao thứ hai trong hệ thống an ninh của Bộ Quốc phòng Mỹ. Tuy nhiên, bản chất cụ thể của mối đe dọa vẫn chưa được làm rõ.\n\nNgười phát ngôn của Bộ Quốc phòng Anh cho biết rằng việc di chuyển máy bay và các khí tài khác là hoạt động thường xuyên theo yêu cầu vận hành. Động thái này diễn ra chỉ vài tuần sau khi lực lượng an ninh bắt giữ 5 người đàn ông mang quốc tịch Anh vì nghi ngờ hỗ trợ tình báo Iran.\n\nBạn có thể đọc thêm chi tiết tại [đây](https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm).",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "fetch",
+              "args": {
+                "url": "https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "fetch",
+              "args": {
+                "url": "https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm"
+              },
+              "result": {
+                "tool": "read_url",
+                "url": "https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm",
+                "items": [
+                  {
+                    "title": "Mỹ sơ tán khẩn cấp máy bay quân sự khỏi căn cứ ở Anh | Báo Dân trí",
+                    "url": "https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm",
+                    "source": "dantri.com.vn",
+                    "summary": "[Sự kiện](https://dantri.com.vn/event.htm)\n\n[Đàm phán Mỹ - Nga - Ukraine 5 bài mới](https://dantri.com.vn/event/dam-phan-my-nga-ukraine-11256.htm \"Đàm phán Mỹ - Nga - Ukraine\")\n\n[Bầu cử giữa nhiệm kỳ Mỹ 1 bài mới](https://dantri.com.vn/event/bau-cu-giua-nhiem-ky-my-11185.htm \"Bầu cử giữa nhiệm kỳ Mỹ\")\n\n[In](https://dantri.com.vn/print-20261110141714859.htm \"In\")\n\n- [Thế giới](https://dantri.com.vn/the-gioi.htm \"Thế giới\")\n\nThứ ba, 10/11/2026 - 14:25\n\n# Mỹ sơ tán khẩn cấp máy bay quân sự khỏi căn cứ ở Anh\n\n[![Minh Phương](https://cdnphoto.dantri.com.vn/_nTe7izAA91-CR-C5hGng0rrb7g=/zoom/36_36/2023/06/14/img2484-edited-crop-1686733235365.jpeg)](https://dantri.com.vn/tac-gia/minh-phuong-107.htm)\n\n[Minh Phương](https://dantri.com.vn/tac-gia/minh-phuong-107.htm)\n\n00:00/00:00\n\n00:00\n\nSpeed\n\nNormal\n\n-01:28\n\nNam miền Bắc\n\n- Giọng Nam miền Bắc\n- Giọng Nữ miền Bắc\n- Giọng Nữ miền Nam\n\n## (Dân trí) - Quân đội Mỹ đã sơ tán các máy bay khỏi một căn cứ không quân tại Anh sau khi có thông tin về mối đe dọa tiềm tàng.\n\n![Mỹ sơ tán khẩn cấp máy bay quân sự khỏi căn cứ ở Anh - 1](https://cdnphoto.dantri.com.vn/qIpU_qoSH64YmbXp2pE55NWrJ3k=/thumb_w/1360/2026/11/10/f15-getty11zon-edited-1794294943278.jpg)\n\nMột máy bay chiến đấu F-15 của Mỹ tại Anh (Ảnh minh họa: Getty).\n\nBáo Wall Street Journal (WSJ) dẫn các nguồn tin thân cận cho biết, Mỹ đã sơ tán hai máy bay tiếp nhiên liệu khỏi căn cứ không quân Mildenhall ở Anh để chuyển đến Đức vào sáng 9/11. Sau đó, cùng ngày, một số máy bay tiếp nhiên liệu khác tại căn cứ này cũng chuyển hướng đến Đức.\n\nĐộng thái trên diễn ra sau khi quân đội Mỹ phát hiện mối đe dọa tiềm tàng đối với căn cứ Mildenhall.\n\nMỹ đã nâng cấp độ an ninh tại căn cứ Mildenhall và căn cứ Lakenheath lên cấp độ FPCON.  Đây là cấp độ đe dọa phòng thủ cao thứ hai trong hệ thống an ninh của Bộ Quốc phòng Mỹ và được áp dụng khi thông tin tình báo chỉ ra rằng một cuộc tấn công có khả năng xảy ra. Tuy nhiên, hiện chưa rõ bản chất mối đe dọa.\n\n\"Chúng tôi không thường xuyên bình luận về hoạt động của các quốc gia khác. Máy bay và các khí tài khác di chuyển thường xuyên theo các yêu cầu vận hành”, một người phát ngôn của Bộ Quốc phòng Anh cho biết.\n\nNgười phát ngôn của Không quân Mỹ từ chối cung cấp chi tiết về sự di chuyển của các máy bay khỏi căn cứ ở Anh, nhưng cho biết việc luân chuyển giữa các cơ sở và địa điểm hoạt động vì nhiều lý do khác nhau.\n\nĐộng thái trên diễn ra chỉ vài tuần sau khi lực lượng an ninh bắt giữ 5 người đàn ông mang quốc tịch Anh bên ngoài căn cứ không quân Fairford ở tây nam nước Anh vào tháng 9 vì bị nghi ngờ hỗ trợ tình báo Iran.\n\nCác máy bay ném bom Mỹ từng sử dụng căn cứ Fairford để thực hiện các đợt tập kích vào Iran. Tehran đã bác bỏ các cáo buộc cho rằng Iran có liên quan đến bất kỳ âm mưu nào nhằm vào căn cứ không quân này.\n\nTheo **JPost**\n\nThêm Dân trí trên Google\n\nKhông bỏ lỡ tin mới, chọn Dân trí làm nguồn tin ưu tiên trên Google.\n\nHướng dẫn: Bấm nút bên dưới để mở trang thiết lập của Google, sau đó tick vào ô cạnh Dân trí\n\n![Dân trí](https://cdnweb.dantri.com.vn/dist/241cc5ac021b2c39fce7.png)\n\nBấm tích vào ô để chuyển xanh (Ảnh minh hoạ thiết lập Google)\n\nĐóngThêm Dân trí trên Google\n\n[![Mỹ rút máy bay ném bom khỏi căn cứ Anh sau sự cố an ninh nghiêm trọng](https://cdnphoto.dantri.com.vn/Af5-va9nHreoE1ugmWfQPVSIzRA=/zoom/252_168/2026/10/05/b1b-getty11zon-1791153167526.jpg)](https://dantri.com.vn/the-gioi/my-rut-may-bay-nem-bom-khoi-can-cu-anh-sau-su-co-an-ninh-nghiem-trong-20261005053416447.htm)\n\n### [Mỹ rút máy bay ném bom khỏi căn cứ Anh sau sự cố an ninh nghiêm trọng](https://dantri.com.vn/the-gioi/my-rut-may-bay-nem-bom-khoi-can-cu-anh-sau-su-co-an-ninh-nghiem-trong-20261005053416447.htm)\n\n[Mỹ đã rút các máy bay ném bom B-1 khỏi căn cứ Anh sau khi phát hiện âm mưu tấn công nhằm vào đây.](https://dantri.com.vn/the-gioi/my-rut-may-bay-nem-bom-khoi-can-cu-anh-sau-su-co-an-ninh-nghiem-trong-20261005053416447.htm)\n\n[![Đột ngột rút B-1 khỏi Anh, Mỹ đang triển khai máy bay ném bom ở đâu?](https://cdnphoto.dant"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Mỹ đã tiến hành sơ tán khẩn cấp các máy bay quân sự khỏi căn cứ không quân Mildenhall ở Anh do phát hiện mối đe dọa tiềm tàng. Hai máy bay tiếp nhiên liệu đã được chuyển đến Đức vào sáng 9/11, cùng với một số máy bay khác trong ngày hôm đó.\n\nCăn cứ Mildenhall và Lakenheath đã được nâng cấp độ an ninh lên cấp độ FPCON, mức độ đe dọa phòng thủ cao thứ hai trong hệ thống an ninh của Bộ Quốc phòng Mỹ. Tuy nhiên, bản chất cụ thể của mối đe dọa vẫn chưa được làm rõ.\n\nNgười phát ngôn của Bộ Quốc phòng Anh cho biết rằng việc di chuyển máy bay và các khí tài khác là hoạt động thường xuyên theo yêu cầu vận hành. Động thái này diễn ra chỉ vài tuần sau khi lực lượng an ninh bắt giữ 5 người đàn ông mang quốc tịch Anh vì nghi ngờ hỗ trợ tình báo Iran.\n\nBạn có thể đọc thêm chi tiết tại [đây](https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm).",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "fetch",
+          "args": {
+            "url": "https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm"
+          },
+          "result": {
+            "tool": "read_url",
+            "url": "https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm",
+            "items": [
+              {
+                "title": "Mỹ sơ tán khẩn cấp máy bay quân sự khỏi căn cứ ở Anh | Báo Dân trí",
+                "url": "https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm",
+                "source": "dantri.com.vn",
+                "summary": "[Sự kiện](https://dantri.com.vn/event.htm)\n\n[Đàm phán Mỹ - Nga - Ukraine 5 bài mới](https://dantri.com.vn/event/dam-phan-my-nga-ukraine-11256.htm \"Đàm phán Mỹ - Nga - Ukraine\")\n\n[Bầu cử giữa nhiệm kỳ Mỹ 1 bài mới](https://dantri.com.vn/event/bau-cu-giua-nhiem-ky-my-11185.htm \"Bầu cử giữa nhiệm kỳ Mỹ\")\n\n[In](https://dantri.com.vn/print-20261110141714859.htm \"In\")\n\n- [Thế giới](https://dantri.com.vn/the-gioi.htm \"Thế giới\")\n\nThứ ba, 10/11/2026 - 14:25\n\n# Mỹ sơ tán khẩn cấp máy bay quân sự khỏi căn cứ ở Anh\n\n[![Minh Phương](https://cdnphoto.dantri.com.vn/_nTe7izAA91-CR-C5hGng0rrb7g=/zoom/36_36/2023/06/14/img2484-edited-crop-1686733235365.jpeg)](https://dantri.com.vn/tac-gia/minh-phuong-107.htm)\n\n[Minh Phương](https://dantri.com.vn/tac-gia/minh-phuong-107.htm)\n\n00:00/00:00\n\n00:00\n\nSpeed\n\nNormal\n\n-01:28\n\nNam miền Bắc\n\n- Giọng Nam miền Bắc\n- Giọng Nữ miền Bắc\n- Giọng Nữ miền Nam\n\n## (Dân trí) - Quân đội Mỹ đã sơ tán các máy bay khỏi một căn cứ không quân tại Anh sau khi có thông tin về mối đe dọa tiềm tàng.\n\n![Mỹ sơ tán khẩn cấp máy bay quân sự khỏi căn cứ ở Anh - 1](https://cdnphoto.dantri.com.vn/qIpU_qoSH64YmbXp2pE55NWrJ3k=/thumb_w/1360/2026/11/10/f15-getty11zon-edited-1794294943278.jpg)\n\nMột máy bay chiến đấu F-15 của Mỹ tại Anh (Ảnh minh họa: Getty).\n\nBáo Wall Street Journal (WSJ) dẫn các nguồn tin thân cận cho biết, Mỹ đã sơ tán hai máy bay tiếp nhiên liệu khỏi căn cứ không quân Mildenhall ở Anh để chuyển đến Đức vào sáng 9/11. Sau đó, cùng ngày, một số máy bay tiếp nhiên liệu khác tại căn cứ này cũng chuyển hướng đến Đức.\n\nĐộng thái trên diễn ra sau khi quân đội Mỹ phát hiện mối đe dọa tiềm tàng đối với căn cứ Mildenhall.\n\nMỹ đã nâng cấp độ an ninh tại căn cứ Mildenhall và căn cứ Lakenheath lên cấp độ FPCON.  Đây là cấp độ đe dọa phòng thủ cao thứ hai trong hệ thống an ninh của Bộ Quốc phòng Mỹ và được áp dụng khi thông tin tình báo chỉ ra rằng một cuộc tấn công có khả năng xảy ra. Tuy nhiên, hiện chưa rõ bản chất mối đe dọa.\n\n\"Chúng tôi không thường xuyên bình luận về hoạt động của các quốc gia khác. Máy bay và các khí tài khác di chuyển thường xuyên theo các yêu cầu vận hành”, một người phát ngôn của Bộ Quốc phòng Anh cho biết.\n\nNgười phát ngôn của Không quân Mỹ từ chối cung cấp chi tiết về sự di chuyển của các máy bay khỏi căn cứ ở Anh, nhưng cho biết việc luân chuyển giữa các cơ sở và địa điểm hoạt động vì nhiều lý do khác nhau.\n\nĐộng thái trên diễn ra chỉ vài tuần sau khi lực lượng an ninh bắt giữ 5 người đàn ông mang quốc tịch Anh bên ngoài căn cứ không quân Fairford ở tây nam nước Anh vào tháng 9 vì bị nghi ngờ hỗ trợ tình báo Iran.\n\nCác máy bay ném bom Mỹ từng sử dụng căn cứ Fairford để thực hiện các đợt tập kích vào Iran. Tehran đã bác bỏ các cáo buộc cho rằng Iran có liên quan đến bất kỳ âm mưu nào nhằm vào căn cứ không quân này.\n\nTheo **JPost**\n\nThêm Dân trí trên Google\n\nKhông bỏ lỡ tin mới, chọn Dân trí làm nguồn tin ưu tiên trên Google.\n\nHướng dẫn: Bấm nút bên dưới để mở trang thiết lập của Google, sau đó tick vào ô cạnh Dân trí\n\n![Dân trí](https://cdnweb.dantri.com.vn/dist/241cc5ac021b2c39fce7.png)\n\nBấm tích vào ô để chuyển xanh (Ảnh minh hoạ thiết lập Google)\n\nĐóngThêm Dân trí trên Google\n\n[![Mỹ rút máy bay ném bom khỏi căn cứ Anh sau sự cố an ninh nghiêm trọng](https://cdnphoto.dantri.com.vn/Af5-va9nHreoE1ugmWfQPVSIzRA=/zoom/252_168/2026/10/05/b1b-getty11zon-1791153167526.jpg)](https://dantri.com.vn/the-gioi/my-rut-may-bay-nem-bom-khoi-can-cu-anh-sau-su-co-an-ninh-nghiem-trong-20261005053416447.htm)\n\n### [Mỹ rút máy bay ném bom khỏi căn cứ Anh sau sự cố an ninh nghiêm trọng](https://dantri.com.vn/the-gioi/my-rut-may-bay-nem-bom-khoi-can-cu-anh-sau-su-co-an-ninh-nghiem-trong-20261005053416447.htm)\n\n[Mỹ đã rút các máy bay ném bom B-1 khỏi căn cứ Anh sau khi phát hiện âm mưu tấn công nhằm vào đây.](https://dantri.com.vn/the-gioi/my-rut-may-bay-nem-bom-khoi-can-cu-anh-sau-su-co-an-ninh-nghiem-trong-20261005053416447.htm)\n\n[![Đột ngột rút B-1 khỏi Anh, Mỹ đang triển khai máy bay ném bom ở đâu?](https://cdnphoto.dant"
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T15:04:56"
+    },
+    {
+      "turn_index": 5,
+      "started_at": "2026-11-10T15:05:16",
+      "user": "Tìm paper về RAG evaluation",
+      "status": "answered",
+      "assistant_text": "Here are some recent papers related to RAG (Retrieval-Augmented Generation) evaluation:\n\n1. **[RAG System for Supporting Japanese Litigation Procedures: Faithful Response Generation Complying with Legal Norms](http://arxiv.org/abs/2511.22858v1)**  \n   - **Authors:** Yuya Ishihara, Atsushi Keyaki, Hiroaki Yamada, Ryutaro Ohara, Mihoko Sumida  \n   - **Summary:** This study discusses the essential components that a RAG-based LLM system should possess to support Japanese medical litigation procedures while complying with legal norms. It outlines requirements for retrieval and response generation in legal contexts.  \n   - **Published:** November 28, 2025  \n   - **[PDF Link](https://arxiv.org/pdf/2511.22858v1)**\n\n2. **[Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Evaluation](http://arxiv.org/abs/2510.25518v1)**  \n   - **Authors:** Thomas Cook, Richard Osuagwu, Liman Tsatiashvili, Vrynsia Vrynsia, Koustav Ghosal, Maraim Masoud, Riccardo Mattivi  \n   - **Summary:** This paper introduces an agentic RAG architecture designed to address challenges in fintech, including intelligent query reformulation and contextual acronym resolution. The proposed system outperforms a standard RAG baseline in retrieval precision and relevance.  \n   - **Published:** October 29, 2025  \n   - **[PDF Link](https://arxiv.org/pdf/2510.25518v1)**\n\n3. **[T-RAG: Lessons from the LLM Trenches](http://arxiv.org/abs/2402.07483v2)**  \n   - **Authors:** Masoomali Fatehkia, Ji Kim Lucas, Sanjay Chawla  \n   - **Summary:** This paper shares experiences in building and deploying an LLM application for question answering over private documents using RAG. It discusses the challenges and improvements made in the application.  \n   - **Published:** February 12, 2024  \n   - **[PDF Link](https://arxiv.org/pdf/2402.07483v2)**\n\n4. **[Adaptive Retrieval, Selective Answers: Evaluating Conformal Factuality in Agentic RAG](http://arxiv.org/abs/2610.34872v1)**  \n   - **Authors:** Muhammad Aimal Rehman, Chi-Kuang Yeh  \n   - **Summary:** This paper evaluates the behavior of agentic RAG in terms of factual grounding and retrieval query adaptation. It examines the reliability-informativeness trade-off in various configurations.  \n   - **Published:** October 26, 2026  \n   - **[PDF Link](https://arxiv.org/pdf/2610.34872v1)**\n\n5. **[RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking](http://arxiv.org/abs/2504.01346v4)**  \n   - **Authors:** Jiaru Zou, Dongqi Fu, Sirui Chen, Xinrui He, Zihao Li, Yada Zhu, Jiawei Han, Jingrui He  \n   - **Summary:** This paper proposes a table-corpora-aware RAG framework, T-RAG, for effective table knowledge retrieval and inference, along with a benchmark for multi-table question answering.  \n   - **Published:** April 2, 2025  \n   - **[PDF Link](https://arxiv.org/pdf/2504.01346v4)**\n\nIf you need more information or specific details about any of these papers, feel free to ask!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "papers",
+              "args": {
+                "query": "RAG evaluation",
+                "max_results": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "papers",
+              "args": {
+                "query": "RAG evaluation",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "arxiv_search",
+                "query": "RAG evaluation",
+                "api_query": "all:RAG AND all:evaluation",
+                "total_results": 3167,
+                "items": [
+                  {
+                    "arxiv_id": "2511.22858v1",
+                    "title": "RAG System for Supporting Japanese Litigation Procedures: Faithful Response Generation Complying with Legal Norms",
+                    "summary": "This study discusses the essential components that a Retrieval-Augmented Generation (RAG)-based LLM system should possess in order to support Japanese medical litigation procedures complying with legal norms. In litigation, expert commissioners, such as physicians, architects, accountants, and engineers, provide specialized knowledge to help judges clarify points of dispute. When considering the substitution of these expert roles with a RAG-based LLM system, the constraint of strict adherence to legal norms is imposed. Specifically, three requirements arise: (1) the retrieval module must retrieve appropriate external knowledge relevant to the disputed issues in accordance with the principle prohibiting the use of private knowledge, (2) the responses generated must originate from the context provided by the RAG and remain faithful to that context, and (3) the retrieval module must reference external knowledge with appropriate timestamps corresponding to the issues at hand. This paper discusses the design of a RAG-based LLM system that satisfies these requirements.",
+                    "authors": [
+                      "Yuya Ishihara",
+                      "Atsushi Keyaki",
+                      "Hiroaki Yamada",
+                      "Ryutaro Ohara",
+                      "Mihoko Sumida"
+                    ],
+                    "published": "2025-11-28T03:28:27Z",
+                    "updated": "2025-11-28T03:28:27Z",
+                    "url": "http://arxiv.org/abs/2511.22858v1",
+                    "pdf_url": "https://arxiv.org/pdf/2511.22858v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL",
+                      "cs.IR"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2510.25518v1",
+                    "title": "Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Evaluation",
+                    "summary": "Retrieval-Augmented Generation (RAG) systems often face limitations in specialized domains such as fintech, where domain-specific ontologies, dense terminology, and acronyms complicate effective retrieval and synthesis. This paper introduces an agentic RAG architecture designed to address these challenges through a modular pipeline of specialized agents. The proposed system supports intelligent query reformulation, iterative sub-query decomposition guided by keyphrase extraction, contextual acronym resolution, and cross-encoder-based context re-ranking. We evaluate our approach against a standard RAG baseline using a curated dataset of 85 question--answer--reference triples derived from an enterprise fintech knowledge base. Experimental results demonstrate that the agentic RAG system outperforms the baseline in retrieval precision and relevance, albeit with increased latency. These findings suggest that structured, multi-agent methodologies offer a promising direction for enhancing retrieval robustness in complex, domain-specific settings.",
+                    "authors": [
+                      "Thomas Cook",
+                      "Richard Osuagwu",
+                      "Liman Tsatiashvili",
+                      "Vrynsia Vrynsia",
+                      "Koustav Ghosal",
+                      "Maraim Masoud",
+                      "Riccardo Mattivi"
+                    ],
+                    "published": "2025-10-29T13:41:36Z",
+                    "updated": "2025-10-29T13:41:36Z",
+                    "url": "http://arxiv.org/abs/2510.25518v1",
+                    "pdf_url": "https://arxiv.org/pdf/2510.25518v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.AI",
+                    "categories": [
+                      "cs.AI"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2402.07483v2",
+                    "title": "T-RAG: Lessons from the LLM Trenches",
+                    "summary": "Large Language Models (LLM) have shown remarkable language capabilities fueling attempts to integrate them into applications across a wide range of domains. An important application area is question answering over private enterprise documents where the main considerations are data security, which necessitates applications that can be deployed on-prem, limited computational resources and the need for a robust application that correctly responds to queries. Retrieval-Augmented Generation (RAG) has emerged as the most prominent framework for building LLM-based applications. While building a RAG is relatively straightforward, making it robust and a reliable application requires extensive customization and relatively deep knowledge of the application domain. We share our experiences building and deploying an LLM application for question answering over private organizational documents. Our application combines the use of RAG with a finetuned open-source LLM. Additionally, our system, which we call Tree-RAG (T-RAG), uses a tree structure to represent entity hierarchies within the organization. This is used to generate a textual description to augment the context when responding to user queries pertaining to entities within the organization's hierarchy. Our evaluations, including a Needle in a Haystack test, show that this combination performs better than a simple RAG or finetuning implementation. Finally, we share some lessons learned based on our experiences building an LLM application for real-world use.",
+                    "authors": [
+                      "Masoomali Fatehkia",
+                      "Ji Kim Lucas",
+                      "Sanjay Chawla"
+                    ],
+                    "published": "2024-02-12T08:45:08Z",
+                    "updated": "2024-06-06T14:42:47Z",
+                    "url": "http://arxiv.org/abs/2402.07483v2",
+                    "pdf_url": "https://arxiv.org/pdf/2402.07483v2",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.AI",
+                    "categories": [
+                      "cs.AI",
+                      "cs.CL"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2610.34872v1",
+                    "title": "Adaptive Retrieval, Selective Answers: Evaluating Conformal Factuality in Agentic RAG",
+                    "summary": "Retrieval-augmented generation (RAG) can improve factual grounding without guaranteeing that every generated claim is supported. Previous work has studied claim-level conformal factuality in single-stage RAG and, more recently, multi-hop RAG. We examine its behavior in agentic RAG, where a language-model policy adaptively issues follow-up retrieval queries or terminates retrieval before response generation. We retain the retrieval-based relevance-scoring formulation and post-generation conformal filtering and evaluate six model-dataset configurations: GPT-6 Luna and Llama 3.1 8B on HotpotQA, Natural Questions, and TriviaQA. Each configuration uses 60 fixed questions, 100 seeded 30/30 calibration-test partitions, five conformal target levels, and a no-conformal-prediction baseline. Across the six configurations, higher target levels are accompanied by higher observed full-support rates and reduced answer availability. At the 95% target, non-empty response coverage ranges from 17.23% to 60.17%, claim retention from 10.72% to 43.16%, and full support among non-empty outputs from 89.14% to 95.56%. We formulate the adaptive retrieval trajectory explicitly and characterize the reliability-informativeness trade-off when conformal factuality is applied after agent termination.",
+                    "authors": [
+                      "Muhammad Aimal Rehman",
+                      "Chi-Kuang Yeh"
+                    ],
+                    "published": "2026-10-26T05:37:03Z",
+                    "updated": "2026-10-26T05:37:03Z",
+                    "url": "http://arxiv.org/abs/2610.34872v1",
+                    "pdf_url": "https://arxiv.org/pdf/2610.34872v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL",
+                      "cs.AI"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2504.01346v4",
+                    "title": "RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking",
+                    "summary": "Retrieval-Augmented Generation (RAG) enhances Large Language Models (LLMs) by integrating them with an external knowledge base to improve the answer relevance and accuracy. In real-world scenarios, beyond pure text, a substantial amount of knowledge is stored in tables, and user questions often require retrieving answers that are distributed across multiple tables. Retrieving knowledge from a table corpora (i.e., various individual tables) for a question remains nascent, at least, for (i) how to understand intra- and inter-table knowledge effectively, (ii) how to filter unnecessary tables and how to retrieve the most relevant tables efficiently, (iii) how to prompt LLMs to infer over the retrieval, (iv) how to evaluate the corresponding performance in a realistic setting. Facing the above challenges, in this paper, we first propose a table-corpora-aware RAG framework, named T-RAG, which consists of the hierarchical memory index, multi-stage retrieval, and graph-aware prompting for effective and efficient table knowledge retrieval and inference. Further, we first develop a multi-table question answering benchmark named MultiTableQA, which spans 3 different task types, 57,193 tables, and 23,758 questions in total, and the sources are all from real-world scenarios. Based on MultiTableQA, we did the holistic comparison over table retrieval methods, RAG methods, and table-to-graph representation learning methods, where T-RAG shows the leading accuracy, recall, and running time performance. Also, under T-RAG, we evaluate the inference ability upgrade of different LLMs. Code and Data are available at https://github.com/jiaruzouu/T-RAG",
+                    "authors": [
+                      "Jiaru Zou",
+                      "Dongqi Fu",
+                      "Sirui Chen",
+                      "Xinrui He",
+                      "Zihao Li",
+                      "Yada Zhu",
+                      "Jiawei Han",
+                      "Jingrui He"
+                    ],
+                    "published": "2025-04-02T04:24:41Z",
+                    "updated": "2025-10-05T07:24:41Z",
+                    "url": "http://arxiv.org/abs/2504.01346v4",
+                    "pdf_url": "https://arxiv.org/pdf/2504.01346v4",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL",
+                      "cs.IR",
+                      "cs.LG"
+                    ]
+                  }
+                ],
+                "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Here are some recent papers related to RAG (Retrieval-Augmented Generation) evaluation:\n\n1. **[RAG System for Supporting Japanese Litigation Procedures: Faithful Response Generation Complying with Legal Norms](http://arxiv.org/abs/2511.22858v1)**  \n   - **Authors:** Yuya Ishihara, Atsushi Keyaki, Hiroaki Yamada, Ryutaro Ohara, Mihoko Sumida  \n   - **Summary:** This study discusses the essential components that a RAG-based LLM system should possess to support Japanese medical litigation procedures while complying with legal norms. It outlines requirements for retrieval and response generation in legal contexts.  \n   - **Published:** November 28, 2025  \n   - **[PDF Link](https://arxiv.org/pdf/2511.22858v1)**\n\n2. **[Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Evaluation](http://arxiv.org/abs/2510.25518v1)**  \n   - **Authors:** Thomas Cook, Richard Osuagwu, Liman Tsatiashvili, Vrynsia Vrynsia, Koustav Ghosal, Maraim Masoud, Riccardo Mattivi  \n   - **Summary:** This paper introduces an agentic RAG architecture designed to address challenges in fintech, including intelligent query reformulation and contextual acronym resolution. The proposed system outperforms a standard RAG baseline in retrieval precision and relevance.  \n   - **Published:** October 29, 2025  \n   - **[PDF Link](https://arxiv.org/pdf/2510.25518v1)**\n\n3. **[T-RAG: Lessons from the LLM Trenches](http://arxiv.org/abs/2402.07483v2)**  \n   - **Authors:** Masoomali Fatehkia, Ji Kim Lucas, Sanjay Chawla  \n   - **Summary:** This paper shares experiences in building and deploying an LLM application for question answering over private documents using RAG. It discusses the challenges and improvements made in the application.  \n   - **Published:** February 12, 2024  \n   - **[PDF Link](https://arxiv.org/pdf/2402.07483v2)**\n\n4. **[Adaptive Retrieval, Selective Answers: Evaluating Conformal Factuality in Agentic RAG](http://arxiv.org/abs/2610.34872v1)**  \n   - **Authors:** Muhammad Aimal Rehman, Chi-Kuang Yeh  \n   - **Summary:** This paper evaluates the behavior of agentic RAG in terms of factual grounding and retrieval query adaptation. It examines the reliability-informativeness trade-off in various configurations.  \n   - **Published:** October 26, 2026  \n   - **[PDF Link](https://arxiv.org/pdf/2610.34872v1)**\n\n5. **[RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking](http://arxiv.org/abs/2504.01346v4)**  \n   - **Authors:** Jiaru Zou, Dongqi Fu, Sirui Chen, Xinrui He, Zihao Li, Yada Zhu, Jiawei Han, Jingrui He  \n   - **Summary:** This paper proposes a table-corpora-aware RAG framework, T-RAG, for effective table knowledge retrieval and inference, along with a benchmark for multi-table question answering.  \n   - **Published:** April 2, 2025  \n   - **[PDF Link](https://arxiv.org/pdf/2504.01346v4)**\n\nIf you need more information or specific details about any of these papers, feel free to ask!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "papers",
+          "args": {
+            "query": "RAG evaluation",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "arxiv_search",
+            "query": "RAG evaluation",
+            "api_query": "all:RAG AND all:evaluation",
+            "total_results": 3167,
+            "items": [
+              {
+                "arxiv_id": "2511.22858v1",
+                "title": "RAG System for Supporting Japanese Litigation Procedures: Faithful Response Generation Complying with Legal Norms",
+                "summary": "This study discusses the essential components that a Retrieval-Augmented Generation (RAG)-based LLM system should possess in order to support Japanese medical litigation procedures complying with legal norms. In litigation, expert commissioners, such as physicians, architects, accountants, and engineers, provide specialized knowledge to help judges clarify points of dispute. When considering the substitution of these expert roles with a RAG-based LLM system, the constraint of strict adherence to legal norms is imposed. Specifically, three requirements arise: (1) the retrieval module must retrieve appropriate external knowledge relevant to the disputed issues in accordance with the principle prohibiting the use of private knowledge, (2) the responses generated must originate from the context provided by the RAG and remain faithful to that context, and (3) the retrieval module must reference external knowledge with appropriate timestamps corresponding to the issues at hand. This paper discusses the design of a RAG-based LLM system that satisfies these requirements.",
+                "authors": [
+                  "Yuya Ishihara",
+                  "Atsushi Keyaki",
+                  "Hiroaki Yamada",
+                  "Ryutaro Ohara",
+                  "Mihoko Sumida"
+                ],
+                "published": "2025-11-28T03:28:27Z",
+                "updated": "2025-11-28T03:28:27Z",
+                "url": "http://arxiv.org/abs/2511.22858v1",
+                "pdf_url": "https://arxiv.org/pdf/2511.22858v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL",
+                  "cs.IR"
+                ]
+              },
+              {
+                "arxiv_id": "2510.25518v1",
+                "title": "Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Evaluation",
+                "summary": "Retrieval-Augmented Generation (RAG) systems often face limitations in specialized domains such as fintech, where domain-specific ontologies, dense terminology, and acronyms complicate effective retrieval and synthesis. This paper introduces an agentic RAG architecture designed to address these challenges through a modular pipeline of specialized agents. The proposed system supports intelligent query reformulation, iterative sub-query decomposition guided by keyphrase extraction, contextual acronym resolution, and cross-encoder-based context re-ranking. We evaluate our approach against a standard RAG baseline using a curated dataset of 85 question--answer--reference triples derived from an enterprise fintech knowledge base. Experimental results demonstrate that the agentic RAG system outperforms the baseline in retrieval precision and relevance, albeit with increased latency. These findings suggest that structured, multi-agent methodologies offer a promising direction for enhancing retrieval robustness in complex, domain-specific settings.",
+                "authors": [
+                  "Thomas Cook",
+                  "Richard Osuagwu",
+                  "Liman Tsatiashvili",
+                  "Vrynsia Vrynsia",
+                  "Koustav Ghosal",
+                  "Maraim Masoud",
+                  "Riccardo Mattivi"
+                ],
+                "published": "2025-10-29T13:41:36Z",
+                "updated": "2025-10-29T13:41:36Z",
+                "url": "http://arxiv.org/abs/2510.25518v1",
+                "pdf_url": "https://arxiv.org/pdf/2510.25518v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.AI",
+                "categories": [
+                  "cs.AI"
+                ]
+              },
+              {
+                "arxiv_id": "2402.07483v2",
+                "title": "T-RAG: Lessons from the LLM Trenches",
+                "summary": "Large Language Models (LLM) have shown remarkable language capabilities fueling attempts to integrate them into applications across a wide range of domains. An important application area is question answering over private enterprise documents where the main considerations are data security, which necessitates applications that can be deployed on-prem, limited computational resources and the need for a robust application that correctly responds to queries. Retrieval-Augmented Generation (RAG) has emerged as the most prominent framework for building LLM-based applications. While building a RAG is relatively straightforward, making it robust and a reliable application requires extensive customization and relatively deep knowledge of the application domain. We share our experiences building and deploying an LLM application for question answering over private organizational documents. Our application combines the use of RAG with a finetuned open-source LLM. Additionally, our system, which we call Tree-RAG (T-RAG), uses a tree structure to represent entity hierarchies within the organization. This is used to generate a textual description to augment the context when responding to user queries pertaining to entities within the organization's hierarchy. Our evaluations, including a Needle in a Haystack test, show that this combination performs better than a simple RAG or finetuning implementation. Finally, we share some lessons learned based on our experiences building an LLM application for real-world use.",
+                "authors": [
+                  "Masoomali Fatehkia",
+                  "Ji Kim Lucas",
+                  "Sanjay Chawla"
+                ],
+                "published": "2024-02-12T08:45:08Z",
+                "updated": "2024-06-06T14:42:47Z",
+                "url": "http://arxiv.org/abs/2402.07483v2",
+                "pdf_url": "https://arxiv.org/pdf/2402.07483v2",
+                "source": "arxiv.org",
+                "primary_category": "cs.AI",
+                "categories": [
+                  "cs.AI",
+                  "cs.CL"
+                ]
+              },
+              {
+                "arxiv_id": "2610.34872v1",
+                "title": "Adaptive Retrieval, Selective Answers: Evaluating Conformal Factuality in Agentic RAG",
+                "summary": "Retrieval-augmented generation (RAG) can improve factual grounding without guaranteeing that every generated claim is supported. Previous work has studied claim-level conformal factuality in single-stage RAG and, more recently, multi-hop RAG. We examine its behavior in agentic RAG, where a language-model policy adaptively issues follow-up retrieval queries or terminates retrieval before response generation. We retain the retrieval-based relevance-scoring formulation and post-generation conformal filtering and evaluate six model-dataset configurations: GPT-6 Luna and Llama 3.1 8B on HotpotQA, Natural Questions, and TriviaQA. Each configuration uses 60 fixed questions, 100 seeded 30/30 calibration-test partitions, five conformal target levels, and a no-conformal-prediction baseline. Across the six configurations, higher target levels are accompanied by higher observed full-support rates and reduced answer availability. At the 95% target, non-empty response coverage ranges from 17.23% to 60.17%, claim retention from 10.72% to 43.16%, and full support among non-empty outputs from 89.14% to 95.56%. We formulate the adaptive retrieval trajectory explicitly and characterize the reliability-informativeness trade-off when conformal factuality is applied after agent termination.",
+                "authors": [
+                  "Muhammad Aimal Rehman",
+                  "Chi-Kuang Yeh"
+                ],
+                "published": "2026-10-26T05:37:03Z",
+                "updated": "2026-10-26T05:37:03Z",
+                "url": "http://arxiv.org/abs/2610.34872v1",
+                "pdf_url": "https://arxiv.org/pdf/2610.34872v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL",
+                  "cs.AI"
+                ]
+              },
+              {
+                "arxiv_id": "2504.01346v4",
+                "title": "RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking",
+                "summary": "Retrieval-Augmented Generation (RAG) enhances Large Language Models (LLMs) by integrating them with an external knowledge base to improve the answer relevance and accuracy. In real-world scenarios, beyond pure text, a substantial amount of knowledge is stored in tables, and user questions often require retrieving answers that are distributed across multiple tables. Retrieving knowledge from a table corpora (i.e., various individual tables) for a question remains nascent, at least, for (i) how to understand intra- and inter-table knowledge effectively, (ii) how to filter unnecessary tables and how to retrieve the most relevant tables efficiently, (iii) how to prompt LLMs to infer over the retrieval, (iv) how to evaluate the corresponding performance in a realistic setting. Facing the above challenges, in this paper, we first propose a table-corpora-aware RAG framework, named T-RAG, which consists of the hierarchical memory index, multi-stage retrieval, and graph-aware prompting for effective and efficient table knowledge retrieval and inference. Further, we first develop a multi-table question answering benchmark named MultiTableQA, which spans 3 different task types, 57,193 tables, and 23,758 questions in total, and the sources are all from real-world scenarios. Based on MultiTableQA, we did the holistic comparison over table retrieval methods, RAG methods, and table-to-graph representation learning methods, where T-RAG shows the leading accuracy, recall, and running time performance. Also, under T-RAG, we evaluate the inference ability upgrade of different LLMs. Code and Data are available at https://github.com/jiaruzouu/T-RAG",
+                "authors": [
+                  "Jiaru Zou",
+                  "Dongqi Fu",
+                  "Sirui Chen",
+                  "Xinrui He",
+                  "Zihao Li",
+                  "Yada Zhu",
+                  "Jiawei Han",
+                  "Jingrui He"
+                ],
+                "published": "2025-04-02T04:24:41Z",
+                "updated": "2025-10-05T07:24:41Z",
+                "url": "http://arxiv.org/abs/2504.01346v4",
+                "pdf_url": "https://arxiv.org/pdf/2504.01346v4",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL",
+                  "cs.IR",
+                  "cs.LG"
+                ]
+              }
+            ],
+            "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T15:05:32"
+    },
+    {
+      "turn_index": 6,
+      "started_at": "2026-11-10T15:05:40",
+      "user": "Đọc nội dung paper arXiv 1706.03762",
+      "status": "answered",
+      "assistant_text": "The paper titled **\"Attention Is All You Need\"** (arXiv ID: 1706.03762) introduces a new architecture called the Transformer, which relies entirely on attention mechanisms, eliminating the need for recurrence and convolutions. Here are some key points from the paper:\n\n- **Abstract:** The Transformer model is designed for sequence transduction tasks, such as machine translation. It achieves superior performance compared to traditional models that use recurrent or convolutional neural networks. The model is more parallelizable and requires significantly less training time.\n\n- **Performance:** The Transformer achieves a BLEU score of 28.4 on the WMT 2014 English-to-German translation task and a state-of-the-art BLEU score of 41.8 on the English-to-French translation task after training for only 3.5 days on eight GPUs.\n\n- **Architecture:** The model consists of an encoder-decoder structure, where the encoder processes the input sequence and the decoder generates the output sequence. Each encoder layer includes a multi-head self-attention mechanism and a feed-forward network, with residual connections and layer normalization applied.\n\n- **Advantages:** The Transformer allows for more parallelization in training and can model dependencies without regard to their distance in the input or output sequences, which is a limitation in recurrent models.\n\nFor more detailed information, you can access the full paper [here](https://arxiv.org/abs/1706.03762) or download the PDF [here](https://arxiv.org/pdf/1706.03762.pdf).",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "paper_text",
+              "args": {
+                "arxiv_url": "1706.03762"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "paper_text",
+              "args": {
+                "arxiv_url": "1706.03762"
+              },
+              "result": {
+                "tool": "get_arxiv_paper_text",
+                "arxiv_id": "1706.03762",
+                "url": "https://arxiv.org/abs/1706.03762",
+                "pdf_url": "https://arxiv.org/pdf/1706.03762.pdf",
+                "pdf_path": "D:\\AI THUC CHIEN VIN\\code\\LAB\\K5-L3A-DAY03-TSN-ResearchAgentToolEval\\starter_v0\\arxiv_papers\\1706.03762.pdf",
+                "txt_path": "D:\\AI THUC CHIEN VIN\\code\\LAB\\K5-L3A-DAY03-TSN-ResearchAgentToolEval\\starter_v0\\arxiv_papers\\1706.03762.txt",
+                "page_count": 15,
+                "pages_read": 5,
+                "chars_returned": 8000,
+                "items": [
+                  {
+                    "title": "arXiv paper 1706.03762",
+                    "url": "https://arxiv.org/abs/1706.03762",
+                    "source": "arxiv.org",
+                    "summary": "Provided proper attribution is provided, Google hereby grants permission to\nreproduce the tables and figures in this paper solely for use in journalistic or\nscholarly works.\nAttention Is All You Need\nAshish Vaswani∗\nGoogle Brain\navaswani@google.com\nNoam Shazeer∗\nGoogle Brain\nnoam@google.com\nNiki Parmar∗\nGoogle Research\nnikip@google.com\nJakob Uszkoreit∗\nGoogle Research\nusz@google.com\nLlion Jones∗\nGoogle Research\nllion@google.com\nAidan N. Gomez∗ †\nUniversity of Toronto\naidan@cs.toronto.edu\nŁukasz Kaiser∗\nGoogle Brain\nlukaszkaiser@google.com\nIllia Polosukhin∗ ‡\nillia.polosukhin@gmail.com\nAbstract\nThe dominant sequence transduction models are based on complex recurrent or\nconvolutional neural networks that include an encoder and a decoder. The best\nperforming models also connect the encoder and decoder through an attention\nmechanism. We propose a new simple network architecture, the Transformer,\nbased solely on attention mechanisms, dispensing with recurrence and convolutions\nentirely. Experiments on two machine translation tasks show these models to\nbe superior in quality while being more parallelizable and requiring significantly\nless time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-\nto-German translation task, improving over the existing best results, including\nensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task,\nour model establishes a new single-model state-of-the-art BLEU score of 41.8 after\ntraining for 3.5 days on eight GPUs, a small fraction of the training costs of the\nbest models from the literature. We show that the Transformer generalizes well to\nother tasks by applying it successfully to English constituency parsing both with\nlarge and limited training data.\n∗Equal contribution. Listing order is random. Jakob proposed replacing RNNs with self-attention and started\nthe effort to evaluate this idea. Ashish, with Illia, designed and implemented the first Transformer models and\nhas been crucially involved in every aspect of this work. Noam proposed scaled dot-product attention, multi-head\nattention and the parameter-free position representation and became the other person involved in nearly every\ndetail. Niki designed, implemented, tuned and evaluated countless model variants in our original codebase and\ntensor2tensor. Llion also experimented with novel model variants, was responsible for our initial codebase, and\nefficient inference and visualizations. Lukasz and Aidan spent countless long days designing various parts of and\nimplementing tensor2tensor, replacing our earlier codebase, greatly improving results and massively accelerating\nour research.\n†Work performed while at Google Brain.\n‡Work performed while at Google Research.\n31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA.\narXiv:1706.03762v7  [cs.CL]  2 Aug 2023\n\n1 Introduction\nRecurrent neural networks, long short-term memory [13] and gated recurrent [7] neural networks\nin particular, have been firmly established as state of the art approaches in sequence modeling and\ntransduction problems such as language modeling and machine translation [ 35, 2, 5]. Numerous\nefforts have since continued to push the boundaries of recurrent language models and encoder-decoder\narchitectures [38, 24, 15].\nRecurrent models typically factor computation along the symbol positions of the input and output\nsequences. Aligning the positions to steps in computation time, they generate a sequence of hidden\nstates ht, as a function of the previous hidden state ht−1 and the input for position t. This inherently\nsequential nature precludes parallelization within training examples, which becomes critical at longer\nsequence lengths, as memory constraints limit batching across examples. Recent work has achieved\nsignificant improvements in computational efficiency through factorization tricks [21] and conditional\ncomputation [32], while also improving model performance in case of the latter. The fundamental\nconstraint of sequential computation, however, remains.\nAttention mechanisms have become an integral part of compelling sequence modeling and transduc-\ntion models in various tasks, allowing modeling of dependencies without regard to their distance in\nthe input or output sequences [2, 19]. In all but a few cases [27], however, such attention mechanisms\nare used in conjunction with a recurrent network.\nIn this work we propose the Transformer, a model architecture eschewing recurrence and instead\nrelying entirely on an attention mechanism to draw global dependencies between input and output.\nThe Transformer allows for significantly more parallelization and can reach a new state of the art in\ntranslation quality after being trained for as little as twelve hours on eight P100 GPUs.\n2 Background\nThe goal of reducing sequential computation also forms the foundation of the Extended Neural GPU\n[16], ByteNet [18] and ConvS2S [9], all of which use convolutional neural networks as basic building\nblock, computing hidden representations in parallel for all input and output positions. In these models,\nthe number of operations required to relate signals from two arbitrary input or output positions grows\nin the distance between positions, linearly for ConvS2S and logarithmically for ByteNet. This makes\nit more difficult to learn dependencies between distant positions [ 12]. In the Transformer this is\nreduced to a constant number of operations, albeit at the cost of reduced effective resolution due\nto averaging attention-weighted positions, an effect we counteract with Multi-Head Attention as\ndescribed in section 3.2.\nSelf-attention, sometimes called intra-attention is an attention mechanism relating different positions\nof a single sequence in order to compute a representation of the sequence. Self-attention has been\nused successfully in a variety of tasks including reading comprehension, abstractive summarization,\ntextual entailment and learning task-independent sentence representations [4, 27, 28, 22].\nEnd-to-end memory networks are based on a recurrent attention mechanism instead of sequence-\naligned recurrence and have been shown to perform well on simple-language question answering and\nlanguage modeling tasks [34].\nTo the best of our knowledge, however, the Transformer is the first transduction model relying\nentirely on self-attention to compute representations of its input and output without using sequence-\naligned RNNs or convolution. In the following sections, we will describe the Transformer, motivate\nself-attention and discuss its advantages over models such as [17, 18] and [9].\n3 Model Architecture\nMost competitive neural sequence transduction models have an encoder-decoder structure [5, 2, 35].\nHere, the encoder maps an input sequence of symbol representations (x1, ..., xn) to a sequence\nof continuous representations z = (z1, ..., zn). Given z, the decoder then generates an output\nsequence (y1, ..., ym) of symbols one element at a time. At each step the model is auto-regressive\n[10], consuming the previously generated symbols as additional input when generating the next.\n2\n\nFigure 1: The Transformer - model architecture.\nThe Transformer follows this overall architecture using stacked self-attention and point-wise, fully\nconnected layers for both the encoder and decoder, shown in the left and right halves of Figure 1,\nrespectively.\n3.1 Encoder and Decoder Stacks\nEncoder: The encoder is composed of a stack of N = 6 identical layers. Each layer has two\nsub-layers. The first is a multi-head self-attention mechanism, and the second is a simple, position-\nwise fully connected feed-forward network. We employ a residual connection [11] around each of\nthe two sub-layers, followed by layer normalization [ 1]. That is, the output of each sub-layer is\nLayerNorm(x + Sublayer(x)), where Sublayer(x) is the function implemented by the sub-layer\nitself. To facilitate these residual connections, all sub-layers in the model, as well as the embedding\nlayers"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "The paper titled **\"Attention Is All You Need\"** (arXiv ID: 1706.03762) introduces a new architecture called the Transformer, which relies entirely on attention mechanisms, eliminating the need for recurrence and convolutions. Here are some key points from the paper:\n\n- **Abstract:** The Transformer model is designed for sequence transduction tasks, such as machine translation. It achieves superior performance compared to traditional models that use recurrent or convolutional neural networks. The model is more parallelizable and requires significantly less training time.\n\n- **Performance:** The Transformer achieves a BLEU score of 28.4 on the WMT 2014 English-to-German translation task and a state-of-the-art BLEU score of 41.8 on the English-to-French translation task after training for only 3.5 days on eight GPUs.\n\n- **Architecture:** The model consists of an encoder-decoder structure, where the encoder processes the input sequence and the decoder generates the output sequence. Each encoder layer includes a multi-head self-attention mechanism and a feed-forward network, with residual connections and layer normalization applied.\n\n- **Advantages:** The Transformer allows for more parallelization in training and can model dependencies without regard to their distance in the input or output sequences, which is a limitation in recurrent models.\n\nFor more detailed information, you can access the full paper [here](https://arxiv.org/abs/1706.03762) or download the PDF [here](https://arxiv.org/pdf/1706.03762.pdf).",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "paper_text",
+          "args": {
+            "arxiv_url": "1706.03762"
+          },
+          "result": {
+            "tool": "get_arxiv_paper_text",
+            "arxiv_id": "1706.03762",
+            "url": "https://arxiv.org/abs/1706.03762",
+            "pdf_url": "https://arxiv.org/pdf/1706.03762.pdf",
+            "pdf_path": "D:\\AI THUC CHIEN VIN\\code\\LAB\\K5-L3A-DAY03-TSN-ResearchAgentToolEval\\starter_v0\\arxiv_papers\\1706.03762.pdf",
+            "txt_path": "D:\\AI THUC CHIEN VIN\\code\\LAB\\K5-L3A-DAY03-TSN-ResearchAgentToolEval\\starter_v0\\arxiv_papers\\1706.03762.txt",
+            "page_count": 15,
+            "pages_read": 5,
+            "chars_returned": 8000,
+            "items": [
+              {
+                "title": "arXiv paper 1706.03762",
+                "url": "https://arxiv.org/abs/1706.03762",
+                "source": "arxiv.org",
+                "summary": "Provided proper attribution is provided, Google hereby grants permission to\nreproduce the tables and figures in this paper solely for use in journalistic or\nscholarly works.\nAttention Is All You Need\nAshish Vaswani∗\nGoogle Brain\navaswani@google.com\nNoam Shazeer∗\nGoogle Brain\nnoam@google.com\nNiki Parmar∗\nGoogle Research\nnikip@google.com\nJakob Uszkoreit∗\nGoogle Research\nusz@google.com\nLlion Jones∗\nGoogle Research\nllion@google.com\nAidan N. Gomez∗ †\nUniversity of Toronto\naidan@cs.toronto.edu\nŁukasz Kaiser∗\nGoogle Brain\nlukaszkaiser@google.com\nIllia Polosukhin∗ ‡\nillia.polosukhin@gmail.com\nAbstract\nThe dominant sequence transduction models are based on complex recurrent or\nconvolutional neural networks that include an encoder and a decoder. The best\nperforming models also connect the encoder and decoder through an attention\nmechanism. We propose a new simple network architecture, the Transformer,\nbased solely on attention mechanisms, dispensing with recurrence and convolutions\nentirely. Experiments on two machine translation tasks show these models to\nbe superior in quality while being more parallelizable and requiring significantly\nless time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-\nto-German translation task, improving over the existing best results, including\nensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task,\nour model establishes a new single-model state-of-the-art BLEU score of 41.8 after\ntraining for 3.5 days on eight GPUs, a small fraction of the training costs of the\nbest models from the literature. We show that the Transformer generalizes well to\nother tasks by applying it successfully to English constituency parsing both with\nlarge and limited training data.\n∗Equal contribution. Listing order is random. Jakob proposed replacing RNNs with self-attention and started\nthe effort to evaluate this idea. Ashish, with Illia, designed and implemented the first Transformer models and\nhas been crucially involved in every aspect of this work. Noam proposed scaled dot-product attention, multi-head\nattention and the parameter-free position representation and became the other person involved in nearly every\ndetail. Niki designed, implemented, tuned and evaluated countless model variants in our original codebase and\ntensor2tensor. Llion also experimented with novel model variants, was responsible for our initial codebase, and\nefficient inference and visualizations. Lukasz and Aidan spent countless long days designing various parts of and\nimplementing tensor2tensor, replacing our earlier codebase, greatly improving results and massively accelerating\nour research.\n†Work performed while at Google Brain.\n‡Work performed while at Google Research.\n31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA.\narXiv:1706.03762v7  [cs.CL]  2 Aug 2023\n\n1 Introduction\nRecurrent neural networks, long short-term memory [13] and gated recurrent [7] neural networks\nin particular, have been firmly established as state of the art approaches in sequence modeling and\ntransduction problems such as language modeling and machine translation [ 35, 2, 5]. Numerous\nefforts have since continued to push the boundaries of recurrent language models and encoder-decoder\narchitectures [38, 24, 15].\nRecurrent models typically factor computation along the symbol positions of the input and output\nsequences. Aligning the positions to steps in computation time, they generate a sequence of hidden\nstates ht, as a function of the previous hidden state ht−1 and the input for position t. This inherently\nsequential nature precludes parallelization within training examples, which becomes critical at longer\nsequence lengths, as memory constraints limit batching across examples. Recent work has achieved\nsignificant improvements in computational efficiency through factorization tricks [21] and conditional\ncomputation [32], while also improving model performance in case of the latter. The fundamental\nconstraint of sequential computation, however, remains.\nAttention mechanisms have become an integral part of compelling sequence modeling and transduc-\ntion models in various tasks, allowing modeling of dependencies without regard to their distance in\nthe input or output sequences [2, 19]. In all but a few cases [27], however, such attention mechanisms\nare used in conjunction with a recurrent network.\nIn this work we propose the Transformer, a model architecture eschewing recurrence and instead\nrelying entirely on an attention mechanism to draw global dependencies between input and output.\nThe Transformer allows for significantly more parallelization and can reach a new state of the art in\ntranslation quality after being trained for as little as twelve hours on eight P100 GPUs.\n2 Background\nThe goal of reducing sequential computation also forms the foundation of the Extended Neural GPU\n[16], ByteNet [18] and ConvS2S [9], all of which use convolutional neural networks as basic building\nblock, computing hidden representations in parallel for all input and output positions. In these models,\nthe number of operations required to relate signals from two arbitrary input or output positions grows\nin the distance between positions, linearly for ConvS2S and logarithmically for ByteNet. This makes\nit more difficult to learn dependencies between distant positions [ 12]. In the Transformer this is\nreduced to a constant number of operations, albeit at the cost of reduced effective resolution due\nto averaging attention-weighted positions, an effect we counteract with Multi-Head Attention as\ndescribed in section 3.2.\nSelf-attention, sometimes called intra-attention is an attention mechanism relating different positions\nof a single sequence in order to compute a representation of the sequence. Self-attention has been\nused successfully in a variety of tasks including reading comprehension, abstractive summarization,\ntextual entailment and learning task-independent sentence representations [4, 27, 28, 22].\nEnd-to-end memory networks are based on a recurrent attention mechanism instead of sequence-\naligned recurrence and have been shown to perform well on simple-language question answering and\nlanguage modeling tasks [34].\nTo the best of our knowledge, however, the Transformer is the first transduction model relying\nentirely on self-attention to compute representations of its input and output without using sequence-\naligned RNNs or convolution. In the following sections, we will describe the Transformer, motivate\nself-attention and discuss its advantages over models such as [17, 18] and [9].\n3 Model Architecture\nMost competitive neural sequence transduction models have an encoder-decoder structure [5, 2, 35].\nHere, the encoder maps an input sequence of symbol representations (x1, ..., xn) to a sequence\nof continuous representations z = (z1, ..., zn). Given z, the decoder then generates an output\nsequence (y1, ..., ym) of symbols one element at a time. At each step the model is auto-regressive\n[10], consuming the previously generated symbols as additional input when generating the next.\n2\n\nFigure 1: The Transformer - model architecture.\nThe Transformer follows this overall architecture using stacked self-attention and point-wise, fully\nconnected layers for both the encoder and decoder, shown in the left and right halves of Figure 1,\nrespectively.\n3.1 Encoder and Decoder Stacks\nEncoder: The encoder is composed of a stack of N = 6 identical layers. Each layer has two\nsub-layers. The first is a multi-head self-attention mechanism, and the second is a simple, position-\nwise fully connected feed-forward network. We employ a residual connection [11] around each of\nthe two sub-layers, followed by layer normalization [ 1]. That is, the output of each sub-layer is\nLayerNorm(x + Sublayer(x)), where Sublayer(x) is the function implemented by the sub-layer\nitself. To facilitate these residual connections, all sub-layers in the model, as well as the embedding\nlayers"
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T15:05:49"
+    },
+    {
+      "turn_index": 7,
+      "started_at": "2026-11-10T15:05:58",
+      "user": "Tóm tắt 5 tweet mới nhất",
+      "status": "answered",
+      "assistant_text": "Here are the 5 most recent tweets from OpenAI:\n\n1. **[Control Room Announcement](https://x.com/OpenAI/status/2119913172039868579)**  \n   We built Control Room, a central system to track model workloads across our research infrastructure and stop them quickly when safety or security concerns arise. It connects every research inference workload and halts model output within 35 seconds of a decision to intervene.  \n   - **Date:** Mon Nov 09 22:01:00 +0000 2026  \n   - **Favorites:** 3674 | **Retweets:** 251 | **Views:** 601300\n\n2. **[RT from OpenAIDevs](https://x.com/OpenAI/status/2119889726043992302)**  \n   You can now connect multiple local computers to the same dot and choose which one it uses for a task.  \n   - **Date:** Mon Nov 09 20:27:50 +0000 2026  \n   - **Favorites:** 0 | **Retweets:** 416 | **Views:** 39321\n\n3. **[Partnership with FMF](https://x.com/OpenAI/status/2118795218099253606)**  \n   We partnered with @fmf_org to help identify when bypassing an AI system's safeguards could enable serious cyber harm and prioritize stronger protections. This framework is an important step toward evaluating and comparing the severity of cyber jailbreaks.  \n   - **Date:** Fri Nov 06 19:58:39 +0000 2026  \n   - **Favorites:** 1680 | **Retweets:** 128 | **Views:** 420412\n\n4. **[BioBasicsBench Introduction](https://x.com/OpenAI/status/2118782708767965238)**  \n   A new way to measure how AI agents handle routine analyses of wet-lab science—BioBasicsBench. Developed with Ligo, it tests whether agents can interpret raw lab data and recognize when evidence doesn’t support a conclusion.  \n   - **Date:** Fri Nov 06 19:08:57 +0000 2026  \n   - **Favorites:** 3747 | **Retweets:** 280 | **Views:** 878212\n\n5. **[Introducing GPT-6 Cyber](https://x.com/OpenAI/status/2118390190246879554)**  \n   Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model is already being used by security teams at companies like Mozilla and Cisco.  \n   - **Date:** Thu Nov 05 17:09:13 +0000 2026  \n   - **Favorites:** 21422 | **Retweets:** 2001 | **Views:** 4122751\n\nIf you need more details about any specific tweet, feel free to ask!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "timeline",
+              "args": {
+                "screenname": "openai",
+                "limit": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "timeline",
+              "args": {
+                "screenname": "openai",
+                "limit": 5
+              },
+              "result": {
+                "tool": "get_user_tweets",
+                "screenname": "openai",
+                "items": [
+                  {
+                    "title": "We built Control Room, a central system to track model workloads across our research infrastructure and stop them quickl",
+                    "summary": "We built Control Room, a central system to track model workloads across our research infrastructure and stop them quickly when safety or security concerns arise.\n\nIt connects every research inference workload, including agentic sampling for model training and evaluation, data processing, and more. This works together with our misalignment monitoring systems, and halts model output within 35 seconds of a decision to intervene to stop or pause a job.\n\nControl Room is just one part of our holistic approach for safe frontier model training and deployment.\n\nhttps://t.co/tc0lBqFdS5",
+                    "url": "https://x.com/OpenAI/status/2119913172039868579",
+                    "source": "@OpenAI",
+                    "date": "Mon Nov 09 22:01:00 +0000 2026",
+                    "metrics": {
+                      "favorites": 3674,
+                      "retweets": 251,
+                      "views": "601300"
+                    }
+                  },
+                  {
+                    "title": "RT @OpenAIDevs: You can now connect multiple local computers to the same dot and choose which one it uses for a task.",
+                    "summary": "RT @OpenAIDevs: You can now connect multiple local computers to the same dot and choose which one it uses for a task.\n\nIt can build and tes…",
+                    "url": "https://x.com/OpenAI/status/2119889726043992302",
+                    "source": "@OpenAI",
+                    "date": "Mon Nov 09 20:27:50 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 416,
+                      "views": "39321"
+                    }
+                  },
+                  {
+                    "title": "We partnered with @fmf_org and its member firms on a new framework to help identify when bypassing an AI system's safegu",
+                    "summary": "We partnered with @fmf_org and its member firms on a new framework to help identify when bypassing an AI system's safeguards could enable serious cyber harm, and prioritize stronger protections.\n\n\"...This framework is an important step toward a common methodology for evaluating and comparing the severity of cyber jailbreaks, including the capabilities they unlock and how readily they can be used. Shared approaches like this can help the AI and security communities build a clearer evidence base and prioritize improvements to safeguards.\"  - OpenAI's Sasha Baker, Head of National Security Policy\n\nhttps://t.co/epOq98YPau",
+                    "url": "https://x.com/OpenAI/status/2118795218099253606",
+                    "source": "@OpenAI",
+                    "date": "Fri Nov 06 19:58:39 +0000 2026",
+                    "metrics": {
+                      "favorites": 1680,
+                      "retweets": 128,
+                      "views": "420412"
+                    }
+                  },
+                  {
+                    "title": "A new way to measure how AI agents handle the routine analyses of wet-lab science—BioBasicsBench.",
+                    "summary": "A new way to measure how AI agents handle the routine analyses of wet-lab science—BioBasicsBench.\n\nDeveloped with Ligo, a biotech company focused on enzyme design, the benchmark draws on 100 tasks from real experiments to test whether agents can interpret raw lab data, identify errors, and recognize when the evidence doesn’t support a conclusion.\n\nAccelerating biological research starts with getting the everyday work right. BioBasicsBench shows where models need to improve, and helps us track what those gains mean for scientific progress, biosafety, and biosecurity.\n\nhttps://t.co/wN2xLk0YeW",
+                    "url": "https://x.com/OpenAI/status/2118782708767965238",
+                    "source": "@OpenAI",
+                    "date": "Fri Nov 06 19:08:57 +0000 2026",
+                    "metrics": {
+                      "favorites": 3747,
+                      "retweets": 280,
+                      "views": "878212"
+                    }
+                  },
+                  {
+                    "title": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignme",
+                    "summary": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment.\n\nThe model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and Cisco—alongside our own at OpenAI—are already putting it to work.\n\nGPT-6 Cyber is available to select Daybreak Red customers and we are expanding access over time.\n\nhttps://t.co/Nzab3Z1Td6",
+                    "url": "https://x.com/OpenAI/status/2118390190246879554",
+                    "source": "@OpenAI",
+                    "date": "Thu Nov 05 17:09:13 +0000 2026",
+                    "metrics": {
+                      "favorites": 21422,
+                      "retweets": 2001,
+                      "views": "4122751"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Here are the 5 most recent tweets from OpenAI:\n\n1. **[Control Room Announcement](https://x.com/OpenAI/status/2119913172039868579)**  \n   We built Control Room, a central system to track model workloads across our research infrastructure and stop them quickly when safety or security concerns arise. It connects every research inference workload and halts model output within 35 seconds of a decision to intervene.  \n   - **Date:** Mon Nov 09 22:01:00 +0000 2026  \n   - **Favorites:** 3674 | **Retweets:** 251 | **Views:** 601300\n\n2. **[RT from OpenAIDevs](https://x.com/OpenAI/status/2119889726043992302)**  \n   You can now connect multiple local computers to the same dot and choose which one it uses for a task.  \n   - **Date:** Mon Nov 09 20:27:50 +0000 2026  \n   - **Favorites:** 0 | **Retweets:** 416 | **Views:** 39321\n\n3. **[Partnership with FMF](https://x.com/OpenAI/status/2118795218099253606)**  \n   We partnered with @fmf_org to help identify when bypassing an AI system's safeguards could enable serious cyber harm and prioritize stronger protections. This framework is an important step toward evaluating and comparing the severity of cyber jailbreaks.  \n   - **Date:** Fri Nov 06 19:58:39 +0000 2026  \n   - **Favorites:** 1680 | **Retweets:** 128 | **Views:** 420412\n\n4. **[BioBasicsBench Introduction](https://x.com/OpenAI/status/2118782708767965238)**  \n   A new way to measure how AI agents handle routine analyses of wet-lab science—BioBasicsBench. Developed with Ligo, it tests whether agents can interpret raw lab data and recognize when evidence doesn’t support a conclusion.  \n   - **Date:** Fri Nov 06 19:08:57 +0000 2026  \n   - **Favorites:** 3747 | **Retweets:** 280 | **Views:** 878212\n\n5. **[Introducing GPT-6 Cyber](https://x.com/OpenAI/status/2118390190246879554)**  \n   Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment. The model is already being used by security teams at companies like Mozilla and Cisco.  \n   - **Date:** Thu Nov 05 17:09:13 +0000 2026  \n   - **Favorites:** 21422 | **Retweets:** 2001 | **Views:** 4122751\n\nIf you need more details about any specific tweet, feel free to ask!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "timeline",
+          "args": {
+            "screenname": "openai",
+            "limit": 5
+          },
+          "result": {
+            "tool": "get_user_tweets",
+            "screenname": "openai",
+            "items": [
+              {
+                "title": "We built Control Room, a central system to track model workloads across our research infrastructure and stop them quickl",
+                "summary": "We built Control Room, a central system to track model workloads across our research infrastructure and stop them quickly when safety or security concerns arise.\n\nIt connects every research inference workload, including agentic sampling for model training and evaluation, data processing, and more. This works together with our misalignment monitoring systems, and halts model output within 35 seconds of a decision to intervene to stop or pause a job.\n\nControl Room is just one part of our holistic approach for safe frontier model training and deployment.\n\nhttps://t.co/tc0lBqFdS5",
+                "url": "https://x.com/OpenAI/status/2119913172039868579",
+                "source": "@OpenAI",
+                "date": "Mon Nov 09 22:01:00 +0000 2026",
+                "metrics": {
+                  "favorites": 3674,
+                  "retweets": 251,
+                  "views": "601300"
+                }
+              },
+              {
+                "title": "RT @OpenAIDevs: You can now connect multiple local computers to the same dot and choose which one it uses for a task.",
+                "summary": "RT @OpenAIDevs: You can now connect multiple local computers to the same dot and choose which one it uses for a task.\n\nIt can build and tes…",
+                "url": "https://x.com/OpenAI/status/2119889726043992302",
+                "source": "@OpenAI",
+                "date": "Mon Nov 09 20:27:50 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 416,
+                  "views": "39321"
+                }
+              },
+              {
+                "title": "We partnered with @fmf_org and its member firms on a new framework to help identify when bypassing an AI system's safegu",
+                "summary": "We partnered with @fmf_org and its member firms on a new framework to help identify when bypassing an AI system's safeguards could enable serious cyber harm, and prioritize stronger protections.\n\n\"...This framework is an important step toward a common methodology for evaluating and comparing the severity of cyber jailbreaks, including the capabilities they unlock and how readily they can be used. Shared approaches like this can help the AI and security communities build a clearer evidence base and prioritize improvements to safeguards.\"  - OpenAI's Sasha Baker, Head of National Security Policy\n\nhttps://t.co/epOq98YPau",
+                "url": "https://x.com/OpenAI/status/2118795218099253606",
+                "source": "@OpenAI",
+                "date": "Fri Nov 06 19:58:39 +0000 2026",
+                "metrics": {
+                  "favorites": 1680,
+                  "retweets": 128,
+                  "views": "420412"
+                }
+              },
+              {
+                "title": "A new way to measure how AI agents handle the routine analyses of wet-lab science—BioBasicsBench.",
+                "summary": "A new way to measure how AI agents handle the routine analyses of wet-lab science—BioBasicsBench.\n\nDeveloped with Ligo, a biotech company focused on enzyme design, the benchmark draws on 100 tasks from real experiments to test whether agents can interpret raw lab data, identify errors, and recognize when the evidence doesn’t support a conclusion.\n\nAccelerating biological research starts with getting the everyday work right. BioBasicsBench shows where models need to improve, and helps us track what those gains mean for scientific progress, biosafety, and biosecurity.\n\nhttps://t.co/wN2xLk0YeW",
+                "url": "https://x.com/OpenAI/status/2118782708767965238",
+                "source": "@OpenAI",
+                "date": "Fri Nov 06 19:08:57 +0000 2026",
+                "metrics": {
+                  "favorites": 3747,
+                  "retweets": 280,
+                  "views": "878212"
+                }
+              },
+              {
+                "title": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignme",
+                "summary": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment.\n\nThe model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and Cisco—alongside our own at OpenAI—are already putting it to work.\n\nGPT-6 Cyber is available to select Daybreak Red customers and we are expanding access over time.\n\nhttps://t.co/Nzab3Z1Td6",
+                "url": "https://x.com/OpenAI/status/2118390190246879554",
+                "source": "@OpenAI",
+                "date": "Thu Nov 05 17:09:13 +0000 2026",
+                "metrics": {
+                  "favorites": 21422,
+                  "retweets": 2001,
+                  "views": "4122751"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T15:06:12"
+    },
+    {
+      "turn_index": 8,
+      "started_at": "2026-11-10T15:06:18",
+      "user": "Đăng bản tin này lên Telegram",
+      "status": "waiting_for_user",
+      "assistant_text": "Bạn có chắc muốn gửi lên Telegram không?",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "clarify",
+              "args": {
+                "question": "Bạn có chắc muốn gửi lên Telegram không?",
+                "response_type": "yes_no"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "clarify",
+              "args": {
+                "question": "Bạn có chắc muốn gửi lên Telegram không?",
+                "response_type": "yes_no"
+              },
+              "result": {
+                "tool": "ask_user",
+                "question": "Bạn có chắc muốn gửi lên Telegram không?",
+                "response_type": "yes_no",
+                "options": [],
+                "awaiting_user": true
+              }
+            }
+          ]
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "clarify",
+          "args": {
+            "question": "Bạn có chắc muốn gửi lên Telegram không?",
+            "response_type": "yes_no"
+          },
+          "result": {
+            "tool": "ask_user",
+            "question": "Bạn có chắc muốn gửi lên Telegram không?",
+            "response_type": "yes_no",
+            "options": [],
+            "awaiting_user": true
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T15:06:20"
+    },
+    {
+      "turn_index": 9,
+      "started_at": "2026-11-10T15:06:52",
+      "user": "Tóm tắt bài viết này",
+      "status": "answered",
+      "assistant_text": "Bài viết trên Dân trí có tiêu đề **\"Mỹ sơ tán khẩn cấp máy bay quân sự khỏi căn cứ ở Anh\"**. Dưới đây là tóm tắt nội dung chính:\n\n- Quân đội Mỹ đã tiến hành sơ tán các máy bay khỏi căn cứ không quân Mildenhall ở Anh do phát hiện mối đe dọa tiềm tàng. Hai máy bay tiếp nhiên liệu đã được chuyển đến Đức vào sáng 9/11, cùng với một số máy bay khác trong ngày hôm đó.\n\n- Căn cứ Mildenhall và Lakenheath đã được nâng cấp độ an ninh lên cấp độ FPCON, mức độ đe dọa phòng thủ cao thứ hai trong hệ thống an ninh của Bộ Quốc phòng Mỹ. Tuy nhiên, bản chất cụ thể của mối đe dọa vẫn chưa được làm rõ.\n\n- Người phát ngôn của Bộ Quốc phòng Anh cho biết rằng việc di chuyển máy bay và các khí tài khác là hoạt động thường xuyên theo yêu cầu vận hành. Động thái này diễn ra chỉ vài tuần sau khi lực lượng an ninh bắt giữ 5 người đàn ông mang quốc tịch Anh vì nghi ngờ hỗ trợ tình báo Iran.\n\nBạn có thể đọc thêm chi tiết tại [đây](https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm).",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "fetch",
+              "args": {
+                "url": "https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "fetch",
+              "args": {
+                "url": "https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm"
+              },
+              "result": {
+                "tool": "read_url",
+                "url": "https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm",
+                "items": [
+                  {
+                    "title": "Mỹ sơ tán khẩn cấp máy bay quân sự khỏi căn cứ ở Anh | Báo Dân trí",
+                    "url": "https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm",
+                    "source": "dantri.com.vn",
+                    "summary": "[Sự kiện](https://dantri.com.vn/event.htm)\n\n[Đàm phán Mỹ - Nga - Ukraine 5 bài mới](https://dantri.com.vn/event/dam-phan-my-nga-ukraine-11256.htm \"Đàm phán Mỹ - Nga - Ukraine\")\n\n[Bầu cử giữa nhiệm kỳ Mỹ 1 bài mới](https://dantri.com.vn/event/bau-cu-giua-nhiem-ky-my-11185.htm \"Bầu cử giữa nhiệm kỳ Mỹ\")\n\n[In](https://dantri.com.vn/print-20261110141714859.htm \"In\")\n\n- [Thế giới](https://dantri.com.vn/the-gioi.htm \"Thế giới\")\n\nThứ ba, 10/11/2026 - 14:25\n\n# Mỹ sơ tán khẩn cấp máy bay quân sự khỏi căn cứ ở Anh\n\n[![Minh Phương](https://cdnphoto.dantri.com.vn/_nTe7izAA91-CR-C5hGng0rrb7g=/zoom/36_36/2023/06/14/img2484-edited-crop-1686733235365.jpeg)](https://dantri.com.vn/tac-gia/minh-phuong-107.htm)\n\n[Minh Phương](https://dantri.com.vn/tac-gia/minh-phuong-107.htm)\n\n00:00/00:00\n\n00:00\n\nSpeed\n\nNormal\n\n-01:28\n\nNam miền Bắc\n\n- Giọng Nam miền Bắc\n- Giọng Nữ miền Bắc\n- Giọng Nữ miền Nam\n\n## (Dân trí) - Quân đội Mỹ đã sơ tán các máy bay khỏi một căn cứ không quân tại Anh sau khi có thông tin về mối đe dọa tiềm tàng.\n\n![Mỹ sơ tán khẩn cấp máy bay quân sự khỏi căn cứ ở Anh - 1](https://cdnphoto.dantri.com.vn/qIpU_qoSH64YmbXp2pE55NWrJ3k=/thumb_w/1360/2026/11/10/f15-getty11zon-edited-1794294943278.jpg)\n\nMột máy bay chiến đấu F-15 của Mỹ tại Anh (Ảnh minh họa: Getty).\n\nBáo Wall Street Journal (WSJ) dẫn các nguồn tin thân cận cho biết, Mỹ đã sơ tán hai máy bay tiếp nhiên liệu khỏi căn cứ không quân Mildenhall ở Anh để chuyển đến Đức vào sáng 9/11. Sau đó, cùng ngày, một số máy bay tiếp nhiên liệu khác tại căn cứ này cũng chuyển hướng đến Đức.\n\nĐộng thái trên diễn ra sau khi quân đội Mỹ phát hiện mối đe dọa tiềm tàng đối với căn cứ Mildenhall.\n\nMỹ đã nâng cấp độ an ninh tại căn cứ Mildenhall và căn cứ Lakenheath lên cấp độ FPCON.  Đây là cấp độ đe dọa phòng thủ cao thứ hai trong hệ thống an ninh của Bộ Quốc phòng Mỹ và được áp dụng khi thông tin tình báo chỉ ra rằng một cuộc tấn công có khả năng xảy ra. Tuy nhiên, hiện chưa rõ bản chất mối đe dọa.\n\n\"Chúng tôi không thường xuyên bình luận về hoạt động của các quốc gia khác. Máy bay và các khí tài khác di chuyển thường xuyên theo các yêu cầu vận hành”, một người phát ngôn của Bộ Quốc phòng Anh cho biết.\n\nNgười phát ngôn của Không quân Mỹ từ chối cung cấp chi tiết về sự di chuyển của các máy bay khỏi căn cứ ở Anh, nhưng cho biết việc luân chuyển giữa các cơ sở và địa điểm hoạt động vì nhiều lý do khác nhau.\n\nĐộng thái trên diễn ra chỉ vài tuần sau khi lực lượng an ninh bắt giữ 5 người đàn ông mang quốc tịch Anh bên ngoài căn cứ không quân Fairford ở tây nam nước Anh vào tháng 9 vì bị nghi ngờ hỗ trợ tình báo Iran.\n\nCác máy bay ném bom Mỹ từng sử dụng căn cứ Fairford để thực hiện các đợt tập kích vào Iran. Tehran đã bác bỏ các cáo buộc cho rằng Iran có liên quan đến bất kỳ âm mưu nào nhằm vào căn cứ không quân này.\n\nTheo **JPost**\n\nThêm Dân trí trên Google\n\nKhông bỏ lỡ tin mới, chọn Dân trí làm nguồn tin ưu tiên trên Google.\n\nHướng dẫn: Bấm nút bên dưới để mở trang thiết lập của Google, sau đó tick vào ô cạnh Dân trí\n\n![Dân trí](https://cdnweb.dantri.com.vn/dist/241cc5ac021b2c39fce7.png)\n\nBấm tích vào ô để chuyển xanh (Ảnh minh hoạ thiết lập Google)\n\nĐóngThêm Dân trí trên Google\n\n[![Mỹ rút máy bay ném bom khỏi căn cứ Anh sau sự cố an ninh nghiêm trọng](https://cdnphoto.dantri.com.vn/Af5-va9nHreoE1ugmWfQPVSIzRA=/zoom/252_168/2026/10/05/b1b-getty11zon-1791153167526.jpg)](https://dantri.com.vn/the-gioi/my-rut-may-bay-nem-bom-khoi-can-cu-anh-sau-su-co-an-ninh-nghiem-trong-20261005053416447.htm)\n\n### [Mỹ rút máy bay ném bom khỏi căn cứ Anh sau sự cố an ninh nghiêm trọng](https://dantri.com.vn/the-gioi/my-rut-may-bay-nem-bom-khoi-can-cu-anh-sau-su-co-an-ninh-nghiem-trong-20261005053416447.htm)\n\n[Mỹ đã rút các máy bay ném bom B-1 khỏi căn cứ Anh sau khi phát hiện âm mưu tấn công nhằm vào đây.](https://dantri.com.vn/the-gioi/my-rut-may-bay-nem-bom-khoi-can-cu-anh-sau-su-co-an-ninh-nghiem-trong-20261005053416447.htm)\n\n[![Đột ngột rút B-1 khỏi Anh, Mỹ đang triển khai máy bay ném bom ở đâu?](https://cdnphoto.dant"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Bài viết trên Dân trí có tiêu đề **\"Mỹ sơ tán khẩn cấp máy bay quân sự khỏi căn cứ ở Anh\"**. Dưới đây là tóm tắt nội dung chính:\n\n- Quân đội Mỹ đã tiến hành sơ tán các máy bay khỏi căn cứ không quân Mildenhall ở Anh do phát hiện mối đe dọa tiềm tàng. Hai máy bay tiếp nhiên liệu đã được chuyển đến Đức vào sáng 9/11, cùng với một số máy bay khác trong ngày hôm đó.\n\n- Căn cứ Mildenhall và Lakenheath đã được nâng cấp độ an ninh lên cấp độ FPCON, mức độ đe dọa phòng thủ cao thứ hai trong hệ thống an ninh của Bộ Quốc phòng Mỹ. Tuy nhiên, bản chất cụ thể của mối đe dọa vẫn chưa được làm rõ.\n\n- Người phát ngôn của Bộ Quốc phòng Anh cho biết rằng việc di chuyển máy bay và các khí tài khác là hoạt động thường xuyên theo yêu cầu vận hành. Động thái này diễn ra chỉ vài tuần sau khi lực lượng an ninh bắt giữ 5 người đàn ông mang quốc tịch Anh vì nghi ngờ hỗ trợ tình báo Iran.\n\nBạn có thể đọc thêm chi tiết tại [đây](https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm).",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "fetch",
+          "args": {
+            "url": "https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm"
+          },
+          "result": {
+            "tool": "read_url",
+            "url": "https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm",
+            "items": [
+              {
+                "title": "Mỹ sơ tán khẩn cấp máy bay quân sự khỏi căn cứ ở Anh | Báo Dân trí",
+                "url": "https://dantri.com.vn/the-gioi/my-so-tan-khan-cap-may-bay-quan-su-khoi-can-cu-o-anh-20261110141714859.htm",
+                "source": "dantri.com.vn",
+                "summary": "[Sự kiện](https://dantri.com.vn/event.htm)\n\n[Đàm phán Mỹ - Nga - Ukraine 5 bài mới](https://dantri.com.vn/event/dam-phan-my-nga-ukraine-11256.htm \"Đàm phán Mỹ - Nga - Ukraine\")\n\n[Bầu cử giữa nhiệm kỳ Mỹ 1 bài mới](https://dantri.com.vn/event/bau-cu-giua-nhiem-ky-my-11185.htm \"Bầu cử giữa nhiệm kỳ Mỹ\")\n\n[In](https://dantri.com.vn/print-20261110141714859.htm \"In\")\n\n- [Thế giới](https://dantri.com.vn/the-gioi.htm \"Thế giới\")\n\nThứ ba, 10/11/2026 - 14:25\n\n# Mỹ sơ tán khẩn cấp máy bay quân sự khỏi căn cứ ở Anh\n\n[![Minh Phương](https://cdnphoto.dantri.com.vn/_nTe7izAA91-CR-C5hGng0rrb7g=/zoom/36_36/2023/06/14/img2484-edited-crop-1686733235365.jpeg)](https://dantri.com.vn/tac-gia/minh-phuong-107.htm)\n\n[Minh Phương](https://dantri.com.vn/tac-gia/minh-phuong-107.htm)\n\n00:00/00:00\n\n00:00\n\nSpeed\n\nNormal\n\n-01:28\n\nNam miền Bắc\n\n- Giọng Nam miền Bắc\n- Giọng Nữ miền Bắc\n- Giọng Nữ miền Nam\n\n## (Dân trí) - Quân đội Mỹ đã sơ tán các máy bay khỏi một căn cứ không quân tại Anh sau khi có thông tin về mối đe dọa tiềm tàng.\n\n![Mỹ sơ tán khẩn cấp máy bay quân sự khỏi căn cứ ở Anh - 1](https://cdnphoto.dantri.com.vn/qIpU_qoSH64YmbXp2pE55NWrJ3k=/thumb_w/1360/2026/11/10/f15-getty11zon-edited-1794294943278.jpg)\n\nMột máy bay chiến đấu F-15 của Mỹ tại Anh (Ảnh minh họa: Getty).\n\nBáo Wall Street Journal (WSJ) dẫn các nguồn tin thân cận cho biết, Mỹ đã sơ tán hai máy bay tiếp nhiên liệu khỏi căn cứ không quân Mildenhall ở Anh để chuyển đến Đức vào sáng 9/11. Sau đó, cùng ngày, một số máy bay tiếp nhiên liệu khác tại căn cứ này cũng chuyển hướng đến Đức.\n\nĐộng thái trên diễn ra sau khi quân đội Mỹ phát hiện mối đe dọa tiềm tàng đối với căn cứ Mildenhall.\n\nMỹ đã nâng cấp độ an ninh tại căn cứ Mildenhall và căn cứ Lakenheath lên cấp độ FPCON.  Đây là cấp độ đe dọa phòng thủ cao thứ hai trong hệ thống an ninh của Bộ Quốc phòng Mỹ và được áp dụng khi thông tin tình báo chỉ ra rằng một cuộc tấn công có khả năng xảy ra. Tuy nhiên, hiện chưa rõ bản chất mối đe dọa.\n\n\"Chúng tôi không thường xuyên bình luận về hoạt động của các quốc gia khác. Máy bay và các khí tài khác di chuyển thường xuyên theo các yêu cầu vận hành”, một người phát ngôn của Bộ Quốc phòng Anh cho biết.\n\nNgười phát ngôn của Không quân Mỹ từ chối cung cấp chi tiết về sự di chuyển của các máy bay khỏi căn cứ ở Anh, nhưng cho biết việc luân chuyển giữa các cơ sở và địa điểm hoạt động vì nhiều lý do khác nhau.\n\nĐộng thái trên diễn ra chỉ vài tuần sau khi lực lượng an ninh bắt giữ 5 người đàn ông mang quốc tịch Anh bên ngoài căn cứ không quân Fairford ở tây nam nước Anh vào tháng 9 vì bị nghi ngờ hỗ trợ tình báo Iran.\n\nCác máy bay ném bom Mỹ từng sử dụng căn cứ Fairford để thực hiện các đợt tập kích vào Iran. Tehran đã bác bỏ các cáo buộc cho rằng Iran có liên quan đến bất kỳ âm mưu nào nhằm vào căn cứ không quân này.\n\nTheo **JPost**\n\nThêm Dân trí trên Google\n\nKhông bỏ lỡ tin mới, chọn Dân trí làm nguồn tin ưu tiên trên Google.\n\nHướng dẫn: Bấm nút bên dưới để mở trang thiết lập của Google, sau đó tick vào ô cạnh Dân trí\n\n![Dân trí](https://cdnweb.dantri.com.vn/dist/241cc5ac021b2c39fce7.png)\n\nBấm tích vào ô để chuyển xanh (Ảnh minh hoạ thiết lập Google)\n\nĐóngThêm Dân trí trên Google\n\n[![Mỹ rút máy bay ném bom khỏi căn cứ Anh sau sự cố an ninh nghiêm trọng](https://cdnphoto.dantri.com.vn/Af5-va9nHreoE1ugmWfQPVSIzRA=/zoom/252_168/2026/10/05/b1b-getty11zon-1791153167526.jpg)](https://dantri.com.vn/the-gioi/my-rut-may-bay-nem-bom-khoi-can-cu-anh-sau-su-co-an-ninh-nghiem-trong-20261005053416447.htm)\n\n### [Mỹ rút máy bay ném bom khỏi căn cứ Anh sau sự cố an ninh nghiêm trọng](https://dantri.com.vn/the-gioi/my-rut-may-bay-nem-bom-khoi-can-cu-anh-sau-su-co-an-ninh-nghiem-trong-20261005053416447.htm)\n\n[Mỹ đã rút các máy bay ném bom B-1 khỏi căn cứ Anh sau khi phát hiện âm mưu tấn công nhằm vào đây.](https://dantri.com.vn/the-gioi/my-rut-may-bay-nem-bom-khoi-can-cu-anh-sau-su-co-an-ninh-nghiem-trong-20261005053416447.htm)\n\n[![Đột ngột rút B-1 khỏi Anh, Mỹ đang triển khai máy bay ném bom ở đâu?](https://cdnphoto.dant"
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T15:07:01"
+    }
+  ]
+}

@@ -1,0 +1,460 @@
+{
+  "transcript_id": "v7_groq_20261110T142704296103",
+  "version": "v7",
+  "artifact_version": "v7+p719a9ac99f61+t2c4b73356f32",
+  "prompt_hash": "719a9ac99f61ef6da6c511f8ecee0f85be608e4310feb311305a353c1184225d",
+  "tools_hash": "2c4b73356f3218ded2f5b898883c72c6298156ede29543117c5affc1398f9594",
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-11-10T14:27:04",
+  "updated_at": "2026-11-10T14:29:26",
+  "turns": [
+    {
+      "turn_index": 1,
+      "started_at": "2026-11-10T14:27:23",
+      "user": "Tweet mới nhất của Sam Altman",
+      "status": "answered",
+      "assistant_text": "**Latest tweet from Sam Altman**\n\n- RT @fouadmatin: Today’s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and better alignment. We’ve… – [@sama](https://x.com/sama/status/2118471941002842341)",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "timeline",
+              "args": {
+                "limit": 1,
+                "screenname": "sama"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "timeline",
+              "args": {
+                "limit": 1,
+                "screenname": "sama"
+              },
+              "result": {
+                "tool": "get_user_tweets",
+                "screenname": "sama",
+                "items": [
+                  {
+                    "title": "RT @fouadmatin: Today’s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and bett",
+                    "summary": "RT @fouadmatin: Today’s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and better alignment. We’ve…",
+                    "url": "https://x.com/sama/status/2118471941002842341",
+                    "source": "@sama",
+                    "date": "Thu Nov 05 22:34:04 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 53,
+                      "views": "47433"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "format",
+              "args": {
+                "headline": "Latest tweet from Sam Altman",
+                "items": [
+                  {
+                    "date": "Thu Nov 05 22:34:04 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 53,
+                      "views": "47433"
+                    },
+                    "section": "Tweet",
+                    "source": "@sama",
+                    "summary": "RT @fouadmatin: Today’s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and better alignment. We’ve…",
+                    "title": "RT @fouadmatin: Today’s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and better alignment. We’ve…",
+                    "url": "https://x.com/sama/status/2118471941002842341"
+                  }
+                ],
+                "template": "brief"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "format",
+              "args": {
+                "headline": "Latest tweet from Sam Altman",
+                "items": [
+                  {
+                    "date": "Thu Nov 05 22:34:04 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 53,
+                      "views": "47433"
+                    },
+                    "section": "Tweet",
+                    "source": "@sama",
+                    "summary": "RT @fouadmatin: Today’s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and better alignment. We’ve…",
+                    "title": "RT @fouadmatin: Today’s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and better alignment. We’ve…",
+                    "url": "https://x.com/sama/status/2118471941002842341"
+                  }
+                ],
+                "template": "brief"
+              },
+              "result": {
+                "tool": "render_digest",
+                "template": "brief",
+                "markdown": "**Latest tweet from Sam Altman**\n\n- RT @fouadmatin: Today’s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and better alignment. We’ve… - [@sama](https://x.com/sama/status/2118471941002842341)",
+                "item_count": 1
+              }
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "assistant_text": "**Latest tweet from Sam Altman**\n\n- RT @fouadmatin: Today’s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and better alignment. We’ve… – [@sama](https://x.com/sama/status/2118471941002842341)",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "timeline",
+          "args": {
+            "limit": 1,
+            "screenname": "sama"
+          },
+          "result": {
+            "tool": "get_user_tweets",
+            "screenname": "sama",
+            "items": [
+              {
+                "title": "RT @fouadmatin: Today’s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and bett",
+                "summary": "RT @fouadmatin: Today’s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and better alignment. We’ve…",
+                "url": "https://x.com/sama/status/2118471941002842341",
+                "source": "@sama",
+                "date": "Thu Nov 05 22:34:04 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 53,
+                  "views": "47433"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "tool": "format",
+          "args": {
+            "headline": "Latest tweet from Sam Altman",
+            "items": [
+              {
+                "date": "Thu Nov 05 22:34:04 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 53,
+                  "views": "47433"
+                },
+                "section": "Tweet",
+                "source": "@sama",
+                "summary": "RT @fouadmatin: Today’s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and better alignment. We’ve…",
+                "title": "RT @fouadmatin: Today’s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and better alignment. We’ve…",
+                "url": "https://x.com/sama/status/2118471941002842341"
+              }
+            ],
+            "template": "brief"
+          },
+          "result": {
+            "tool": "render_digest",
+            "template": "brief",
+            "markdown": "**Latest tweet from Sam Altman**\n\n- RT @fouadmatin: Today’s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and better alignment. We’ve… - [@sama](https://x.com/sama/status/2118471941002842341)",
+            "item_count": 1
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T14:27:37"
+    },
+    {
+      "turn_index": 2,
+      "started_at": "2026-11-10T14:28:35",
+      "user": "Tin AI hôm nay",
+      "status": "answered",
+      "assistant_text": "**Tin AI hôm nay**\n\n- MOBILE, Ala. (WALA) – Artificial intelligence is becoming a bigger part of everyday life, raising questions about what the technology could mean for workers and their jobs. Some economists believe AI poses a particular threat to entry‑level and repetitive work, including call center, data entry and junior copywriting jobs, according to *The Wall Street Journal*. Those tasks may be easier to automate. But AI could also create opportunities. A Bloomberg article points to potential job growth in construction and manufacturing as companies build data centers and produce the chips that power the technology. Some higher‑skilled office workers could also benefit if AI helps them become more productive. The long‑term impact on jobs remains unclear, but workers can take steps to prepare. Exploring AI chatbots, writing assistants and other tools may help people find ways to work more efficiently and develop skills that complement the technology.  \n  — [fox10tv.com](https://www.fox10tv.com/2026/11/10/ai-your-job-threat-or-opportunity)\n\n- I understand the appeal. College is busy. … There is also something to be said about individuality. AI can generate an outline, rewrite a paragraph, summarize a reading or produce an entire essay before you have even finished your Celsius. But convenience does not necessarily facilitate education. …  \n  — [thebatt.com](https://thebatt.com/opinion/opinion-ai-cannot-replace-being-human)\n\n- However, both companies told Australian parliament last month that they would welcome laws requiring them to report data breaches carried out by their AI agents, acknowledging the decision to notify was currently at their discretion. Albanese said his centre‑left Labor government would set up an AI regulator to oversee security controls throughout the development and deployment of AI systems, identify serious risks and conduct independent evaluations of AI models. …  \n  — [reuters.com](https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10)\n\n- The bill’s advocates argue that its passage would serve as a rare bipartisan win and a victory for affordability. But critics, especially those on the left, are calling for Democrats to wait until the next Congress. …  \n  — [time.com](https://time.com/article/2026/11/10/permitting-bill-data-centers)\n\n- Also conspicuously absent was any serious attention to the possible spiritual warfare dimension of AI. Some prominent Christian thinkers, including Rod Dreher and Paul Kingsnorth, are genuinely concerned that AI could serve as a conduit for demonic forces. …  \n  — [firstthings.com](https://firstthings.com/wisdom-in-the-age-of-ai)",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "lookup",
+              "args": {
+                "max_results": 5,
+                "query": "AI",
+                "timeframe": "day",
+                "topic": "news"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "lookup",
+              "args": {
+                "max_results": 5,
+                "query": "AI",
+                "timeframe": "day",
+                "topic": "news"
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "AI",
+                "topic": "news",
+                "timeframe": "day",
+                "items": [
+                  {
+                    "title": "AI and your job: Threat or opportunity?",
+                    "url": "https://www.fox10tv.com/2026/11/10/ai-your-job-threat-or-opportunity",
+                    "source": "fox10tv.com",
+                    "summary": "MOBILE, Ala. (WALA) - Artificial intelligence is becoming a bigger part of everyday life, raising questions about what the technology could mean for workers and their jobs.\n\nSome economists believe AI poses a particular threat to entry-level and repetitive work, including call center, data entry and junior copywriting jobs, according to The Wall Street Journal. Those tasks may be easier to automate. [...] But AI could also create opportunities. A Bloomberg article points to potential job growth in construction and manufacturing as companies build data centers and produce the chips that power the technology. Some higher-skilled office workers could also benefit if AI helps them become more productive. [...] The long-term impact on jobs remains unclear, but workers can take steps to prepare. Exploring AI chatbots, writing assistants and other tools may help people find ways to work more efficiently and develop skills that complement the technology.",
+                    "score": 0.57969785
+                  },
+                  {
+                    "title": "Opinion: AI cannot replace being human – The Battalion",
+                    "url": "https://thebatt.com/opinion/opinion-ai-cannot-replace-being-human",
+                    "source": "thebatt.com",
+                    "summary": "I understand the appeal. College is busy. Between classes, jobs, extracurriculars, leadership positions and trying to maintain some semblance of a social life, there are never enough hours in the day. AI makes things easier. It can generate an outline, rewrite a paragraph, summarize a reading or produce an entire essay before you have even finished your Celsius. But convenience does not necessarily facilitate education. [...] I am not asking anyone to abandon AI. I use it, and I recognize the benefits it provides. But I do think we need to become more conscientious about when we use it and what we are asking it to do for us. Let it help with the tedious tasks. Let it serve as a resource. But do not let it become a substitute for your own intellectual development. [...] There is also something to be said about individuality. AI can generate an argument, imitate a writing style or suggest a creative direction, but our perspectives are developed through our own experiences, disagreements, mistakes and interpretations. The things that make our voices interesting are often the very things that cannot be neatly generated from a prompt. If we constantly rely on the same tools to tell us what to think and how to express it, we risk losing the differences that make",
+                    "score": 0.5616957
+                  },
+                  {
+                    "title": "Australia to mandate AI breach reporting, create regulator after OpenAI breach | Reuters",
+                    "url": "https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10",
+                    "source": "reuters.com",
+                    "summary": "However, both companies told Australian parliament last ​month that they would welcome ​laws requiring them to ⁠report data breaches carried out by their AI agents, acknowledging the decision to notify was currently at their discretion.\n\nAlbanese said his centre-left ​Labor government would set up an AI regulator to oversee security ​controls throughout ⁠the development and deployment of AI systems, identify serious risks and conduct independent evaluations of AI models. [...] \"The AI safety regulator will be able to enforce significant penalties for AI companies ⁠doing the ​wrong thing,\" he said.\n\nThe mandatory AI safety and ​security protections will form part of the government's proposed AI legislation, Albanese said, which it plans to introduce in ​Parliament next year.\n\nReporting by Renju Jose in Sydney; Editing by Christian Schmollinger and Saad Sayeed\n\nOur Standards: The Thomson Reuters Trust Principles. [...] Albanese said his government had accepted all recommendations of the ​review.\n\n\"(The recommendations) include mandatory AI company reporting when it comes to misaligned behaviour or cyber ​incidents, and consideration of reforming criminal law in cases of serious misconduct,\" Albanese told reporters.\n\n\"The law needs to get ahead of, and in some cases, make sure that it catches up with what is ​a very fast-changing world.\"",
+                    "score": 0.509772
+                  },
+                  {
+                    "title": "Congress’s Permitting Bill Is a ‘Massive Giveaway’ to the AI Data Center Industry, Critics Warn",
+                    "url": "https://time.com/article/2026/11/10/permitting-bill-data-centers",
+                    "source": "time.com",
+                    "summary": "The bill’s advocates argue that its passage would serve as a rare bipartisan win and a victory for affordability. But critics, especially those on the left, are calling for Democrats to wait until the next Congress. “You just heard Americans demand much more of a say in a way that AI is shaping their lives,” says Michele Jawando, the CEO of Omidyar Network. “Whenever you try to ram something through in a lame duck Congress before you have a hundred new House members, that’s never a good look [...] Another major concern from critics is that the bill will lead to many more data centers getting built on federally-owned land. The Trump administration has embraced this idea, and signed an executive order in July 2025 directing the Interior and Energy departments to make federal sites available for data centers and to streamline their environmental reviews. “We’re going to ‘mine, baby, mine’ so we can ‘build, baby, build’ because we’ve got to build AI data centers,” Interior Secretary Doug [...] America’s data center boom has also been a gas boom. In the scramble to bring AI data centers online as fast as possible, many developers have built their own gas power plants instead of waiting to connect to the grid. Global Energy Monitor data reported by Wired show that U.S. gas projects powering data centers increased from roughly 4 gigawatts in early 2024 to 189 gigawatts in development by mid-2026. In some cases, these gas plants have worsened local pollution and exacerbated health issues",
+                    "score": 0.44646454
+                  },
+                  {
+                    "title": "Wisdom in the Age of AI - First Things",
+                    "url": "https://firstthings.com/wisdom-in-the-age-of-ai",
+                    "source": "firstthings.com",
+                    "summary": "Also conspicuously absent was any serious attention to the possible spiritual warfare dimension of AI. Some prominent Christian thinkers, including Rod Dreher and Paul Kingsnorth, are genuinely concerned that AI could serve as a conduit for demonic forces. The Christian who is serious about the reality of spiritual warfare should at least consider this possibility. Not to do so is a failure of wisdom. After all, “our struggle is not against flesh and blood, but against the rulers, against the [...] The Calvin University Wisdom in the Age of AI conference was exactly what we need at this cultural moment, even if some of the revelations it occasioned are troubling. Such conferences are useful barometers for current thinking. This one served a double function: making us wiser about AI technology and revealing a void in Christian scholarly engagement. [...] Of course, many of the speakers did their share of theology, as was encouraged by the conference organizers. But, evidently, nearly all Christian theologians and biblical scholars who saw the call for papers decided to stay home and leave this important wisdom work to scholars whose fields are more concerned with AI’s application than with the moral questions raised by its use. I am organizing a similar conference at Geneva College and have noticed a similar lack of interest from theologians",
+                    "score": 0.44351006
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "format",
+              "args": {
+                "headline": "Tin AI hôm nay",
+                "items": [
+                  {
+                    "source": "fox10tv.com",
+                    "summary": "MOBILE, Ala. (WALA) - Artificial intelligence is becoming a bigger part of everyday life, raising questions about what the technology could mean for workers and their jobs. Some economists believe AI poses a particular threat to entry-level and repetitive work, including call center, data entry and junior copywriting jobs, according to The Wall Street Journal. Those tasks may be easier to automate. But AI could also create opportunities. A Bloomberg article points to potential job growth in construction and manufacturing as companies build data centers and produce the chips that power the technology. Some higher-skilled office workers could also benefit if AI helps them become more productive. The long-term impact on jobs remains unclear, but workers can take steps to prepare. Exploring AI chatbots, writing assistants and other tools may help people find ways to work more efficiently and develop skills that complement the technology.",
+                    "title": "AI and your job: Threat or opportunity?",
+                    "url": "https://www.fox10tv.com/2026/11/10/ai-your-job-threat-or-opportunity"
+                  },
+                  {
+                    "source": "thebatt.com",
+                    "summary": "I understand the appeal. College is busy. ... There is also something to be said about individuality. AI can generate an outline, rewrite a paragraph, summarize a reading or produce an entire essay before you have even finished your Celsius. But convenience does not necessarily facilitate education. ...",
+                    "title": "Opinion: AI cannot replace being human – The Battalion",
+                    "url": "https://thebatt.com/opinion/opinion-ai-cannot-replace-being-human"
+                  },
+                  {
+                    "source": "reuters.com",
+                    "summary": "However, both companies told Australian parliament last month that they would welcome laws requiring them to report data breaches carried out by their AI agents, acknowledging the decision to notify was currently at their discretion. Albanese said his centre-left Labor government would set up an AI regulator to oversee security controls throughout the development and deployment of AI systems, identify serious risks and conduct independent evaluations of AI models. ...",
+                    "title": "Australia to mandate AI breach reporting, create regulator after OpenAI breach | Reuters",
+                    "url": "https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10"
+                  },
+                  {
+                    "source": "time.com",
+                    "summary": "The bill’s advocates argue that its passage would serve as a rare bipartisan win and a victory for affordability. But critics, especially those on the left, are calling for Democrats to wait until the next Congress. ...",
+                    "title": "Congress’s Permitting Bill Is a ‘Massive Giveaway’ to the AI Data Center Industry, Critics Warn",
+                    "url": "https://time.com/article/2026/11/10/permitting-bill-data-centers"
+                  },
+                  {
+                    "source": "firstthings.com",
+                    "summary": "Also conspicuously absent was any serious attention to the possible spiritual warfare dimension of AI. Some prominent Christian thinkers, including Rod Dreher and Paul Kingsnorth, are genuinely concerned that AI could serve as a conduit for demonic forces. ...",
+                    "title": "Wisdom in the Age of AI - First Things",
+                    "url": "https://firstthings.com/wisdom-in-the-age-of-ai"
+                  }
+                ],
+                "template": "bullets"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "format",
+              "args": {
+                "headline": "Tin AI hôm nay",
+                "items": [
+                  {
+                    "source": "fox10tv.com",
+                    "summary": "MOBILE, Ala. (WALA) - Artificial intelligence is becoming a bigger part of everyday life, raising questions about what the technology could mean for workers and their jobs. Some economists believe AI poses a particular threat to entry-level and repetitive work, including call center, data entry and junior copywriting jobs, according to The Wall Street Journal. Those tasks may be easier to automate. But AI could also create opportunities. A Bloomberg article points to potential job growth in construction and manufacturing as companies build data centers and produce the chips that power the technology. Some higher-skilled office workers could also benefit if AI helps them become more productive. The long-term impact on jobs remains unclear, but workers can take steps to prepare. Exploring AI chatbots, writing assistants and other tools may help people find ways to work more efficiently and develop skills that complement the technology.",
+                    "title": "AI and your job: Threat or opportunity?",
+                    "url": "https://www.fox10tv.com/2026/11/10/ai-your-job-threat-or-opportunity"
+                  },
+                  {
+                    "source": "thebatt.com",
+                    "summary": "I understand the appeal. College is busy. ... There is also something to be said about individuality. AI can generate an outline, rewrite a paragraph, summarize a reading or produce an entire essay before you have even finished your Celsius. But convenience does not necessarily facilitate education. ...",
+                    "title": "Opinion: AI cannot replace being human – The Battalion",
+                    "url": "https://thebatt.com/opinion/opinion-ai-cannot-replace-being-human"
+                  },
+                  {
+                    "source": "reuters.com",
+                    "summary": "However, both companies told Australian parliament last month that they would welcome laws requiring them to report data breaches carried out by their AI agents, acknowledging the decision to notify was currently at their discretion. Albanese said his centre-left Labor government would set up an AI regulator to oversee security controls throughout the development and deployment of AI systems, identify serious risks and conduct independent evaluations of AI models. ...",
+                    "title": "Australia to mandate AI breach reporting, create regulator after OpenAI breach | Reuters",
+                    "url": "https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10"
+                  },
+                  {
+                    "source": "time.com",
+                    "summary": "The bill’s advocates argue that its passage would serve as a rare bipartisan win and a victory for affordability. But critics, especially those on the left, are calling for Democrats to wait until the next Congress. ...",
+                    "title": "Congress’s Permitting Bill Is a ‘Massive Giveaway’ to the AI Data Center Industry, Critics Warn",
+                    "url": "https://time.com/article/2026/11/10/permitting-bill-data-centers"
+                  },
+                  {
+                    "source": "firstthings.com",
+                    "summary": "Also conspicuously absent was any serious attention to the possible spiritual warfare dimension of AI. Some prominent Christian thinkers, including Rod Dreher and Paul Kingsnorth, are genuinely concerned that AI could serve as a conduit for demonic forces. ...",
+                    "title": "Wisdom in the Age of AI - First Things",
+                    "url": "https://firstthings.com/wisdom-in-the-age-of-ai"
+                  }
+                ],
+                "template": "bullets"
+              },
+              "result": {
+                "tool": "render_digest",
+                "template": "bullets",
+                "markdown": "- MOBILE, Ala. (WALA) - Artificial intelligence is becoming a bigger part of everyday life, raising questions about what the technology could mean for workers and their jobs. Some economists believe AI poses a particular threat to entry-level and repetitive work, including call ... - [fox10tv.com](https://www.fox10tv.com/2026/11/10/ai-your-job-threat-or-opportunity)\n- I understand the appeal. College is busy. ... There is also something to be said about individuality. AI can generate an outline, rewrite a paragraph, summarize a reading or produce an entire essay before you have even finished your Celsius. But convenience does not necessaril... - [thebatt.com](https://thebatt.com/opinion/opinion-ai-cannot-replace-being-human)\n- However, both companies told Australian parliament last month that they would welcome laws requiring them to report data breaches carried out by their AI agents, acknowledging the decision to notify was currently at their discretion. Albanese said his centre-left Labor governm... - [reuters.com](https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10)\n- The bill’s advocates argue that its passage would serve as a rare bipartisan win and a victory for affordability. But critics, especially those on the left, are calling for Democrats to wait until the next Congress. ... - [time.com](https://time.com/article/2026/11/10/permitting-bill-data-centers)\n- Also conspicuously absent was any serious attention to the possible spiritual warfare dimension of AI. Some prominent Christian thinkers, including Rod Dreher and Paul Kingsnorth, are genuinely concerned that AI could serve as a conduit for demonic forces. ... - [firstthings.com](https://firstthings.com/wisdom-in-the-age-of-ai)",
+                "item_count": 5
+              }
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "assistant_text": "**Tin AI hôm nay**\n\n- MOBILE, Ala. (WALA) – Artificial intelligence is becoming a bigger part of everyday life, raising questions about what the technology could mean for workers and their jobs. Some economists believe AI poses a particular threat to entry‑level and repetitive work, including call center, data entry and junior copywriting jobs, according to *The Wall Street Journal*. Those tasks may be easier to automate. But AI could also create opportunities. A Bloomberg article points to potential job growth in construction and manufacturing as companies build data centers and produce the chips that power the technology. Some higher‑skilled office workers could also benefit if AI helps them become more productive. The long‑term impact on jobs remains unclear, but workers can take steps to prepare. Exploring AI chatbots, writing assistants and other tools may help people find ways to work more efficiently and develop skills that complement the technology.  \n  — [fox10tv.com](https://www.fox10tv.com/2026/11/10/ai-your-job-threat-or-opportunity)\n\n- I understand the appeal. College is busy. … There is also something to be said about individuality. AI can generate an outline, rewrite a paragraph, summarize a reading or produce an entire essay before you have even finished your Celsius. But convenience does not necessarily facilitate education. …  \n  — [thebatt.com](https://thebatt.com/opinion/opinion-ai-cannot-replace-being-human)\n\n- However, both companies told Australian parliament last month that they would welcome laws requiring them to report data breaches carried out by their AI agents, acknowledging the decision to notify was currently at their discretion. Albanese said his centre‑left Labor government would set up an AI regulator to oversee security controls throughout the development and deployment of AI systems, identify serious risks and conduct independent evaluations of AI models. …  \n  — [reuters.com](https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10)\n\n- The bill’s advocates argue that its passage would serve as a rare bipartisan win and a victory for affordability. But critics, especially those on the left, are calling for Democrats to wait until the next Congress. …  \n  — [time.com](https://time.com/article/2026/11/10/permitting-bill-data-centers)\n\n- Also conspicuously absent was any serious attention to the possible spiritual warfare dimension of AI. Some prominent Christian thinkers, including Rod Dreher and Paul Kingsnorth, are genuinely concerned that AI could serve as a conduit for demonic forces. …  \n  — [firstthings.com](https://firstthings.com/wisdom-in-the-age-of-ai)",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "max_results": 5,
+            "query": "AI",
+            "timeframe": "day",
+            "topic": "news"
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day",
+            "items": [
+              {
+                "title": "AI and your job: Threat or opportunity?",
+                "url": "https://www.fox10tv.com/2026/11/10/ai-your-job-threat-or-opportunity",
+                "source": "fox10tv.com",
+                "summary": "MOBILE, Ala. (WALA) - Artificial intelligence is becoming a bigger part of everyday life, raising questions about what the technology could mean for workers and their jobs.\n\nSome economists believe AI poses a particular threat to entry-level and repetitive work, including call center, data entry and junior copywriting jobs, according to The Wall Street Journal. Those tasks may be easier to automate. [...] But AI could also create opportunities. A Bloomberg article points to potential job growth in construction and manufacturing as companies build data centers and produce the chips that power the technology. Some higher-skilled office workers could also benefit if AI helps them become more productive. [...] The long-term impact on jobs remains unclear, but workers can take steps to prepare. Exploring AI chatbots, writing assistants and other tools may help people find ways to work more efficiently and develop skills that complement the technology.",
+                "score": 0.57969785
+              },
+              {
+                "title": "Opinion: AI cannot replace being human – The Battalion",
+                "url": "https://thebatt.com/opinion/opinion-ai-cannot-replace-being-human",
+                "source": "thebatt.com",
+                "summary": "I understand the appeal. College is busy. Between classes, jobs, extracurriculars, leadership positions and trying to maintain some semblance of a social life, there are never enough hours in the day. AI makes things easier. It can generate an outline, rewrite a paragraph, summarize a reading or produce an entire essay before you have even finished your Celsius. But convenience does not necessarily facilitate education. [...] I am not asking anyone to abandon AI. I use it, and I recognize the benefits it provides. But I do think we need to become more conscientious about when we use it and what we are asking it to do for us. Let it help with the tedious tasks. Let it serve as a resource. But do not let it become a substitute for your own intellectual development. [...] There is also something to be said about individuality. AI can generate an argument, imitate a writing style or suggest a creative direction, but our perspectives are developed through our own experiences, disagreements, mistakes and interpretations. The things that make our voices interesting are often the very things that cannot be neatly generated from a prompt. If we constantly rely on the same tools to tell us what to think and how to express it, we risk losing the differences that make",
+                "score": 0.5616957
+              },
+              {
+                "title": "Australia to mandate AI breach reporting, create regulator after OpenAI breach | Reuters",
+                "url": "https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10",
+                "source": "reuters.com",
+                "summary": "However, both companies told Australian parliament last ​month that they would welcome ​laws requiring them to ⁠report data breaches carried out by their AI agents, acknowledging the decision to notify was currently at their discretion.\n\nAlbanese said his centre-left ​Labor government would set up an AI regulator to oversee security ​controls throughout ⁠the development and deployment of AI systems, identify serious risks and conduct independent evaluations of AI models. [...] \"The AI safety regulator will be able to enforce significant penalties for AI companies ⁠doing the ​wrong thing,\" he said.\n\nThe mandatory AI safety and ​security protections will form part of the government's proposed AI legislation, Albanese said, which it plans to introduce in ​Parliament next year.\n\nReporting by Renju Jose in Sydney; Editing by Christian Schmollinger and Saad Sayeed\n\nOur Standards: The Thomson Reuters Trust Principles. [...] Albanese said his government had accepted all recommendations of the ​review.\n\n\"(The recommendations) include mandatory AI company reporting when it comes to misaligned behaviour or cyber ​incidents, and consideration of reforming criminal law in cases of serious misconduct,\" Albanese told reporters.\n\n\"The law needs to get ahead of, and in some cases, make sure that it catches up with what is ​a very fast-changing world.\"",
+                "score": 0.509772
+              },
+              {
+                "title": "Congress’s Permitting Bill Is a ‘Massive Giveaway’ to the AI Data Center Industry, Critics Warn",
+                "url": "https://time.com/article/2026/11/10/permitting-bill-data-centers",
+                "source": "time.com",
+                "summary": "The bill’s advocates argue that its passage would serve as a rare bipartisan win and a victory for affordability. But critics, especially those on the left, are calling for Democrats to wait until the next Congress. “You just heard Americans demand much more of a say in a way that AI is shaping their lives,” says Michele Jawando, the CEO of Omidyar Network. “Whenever you try to ram something through in a lame duck Congress before you have a hundred new House members, that’s never a good look [...] Another major concern from critics is that the bill will lead to many more data centers getting built on federally-owned land. The Trump administration has embraced this idea, and signed an executive order in July 2025 directing the Interior and Energy departments to make federal sites available for data centers and to streamline their environmental reviews. “We’re going to ‘mine, baby, mine’ so we can ‘build, baby, build’ because we’ve got to build AI data centers,” Interior Secretary Doug [...] America’s data center boom has also been a gas boom. In the scramble to bring AI data centers online as fast as possible, many developers have built their own gas power plants instead of waiting to connect to the grid. Global Energy Monitor data reported by Wired show that U.S. gas projects powering data centers increased from roughly 4 gigawatts in early 2024 to 189 gigawatts in development by mid-2026. In some cases, these gas plants have worsened local pollution and exacerbated health issues",
+                "score": 0.44646454
+              },
+              {
+                "title": "Wisdom in the Age of AI - First Things",
+                "url": "https://firstthings.com/wisdom-in-the-age-of-ai",
+                "source": "firstthings.com",
+                "summary": "Also conspicuously absent was any serious attention to the possible spiritual warfare dimension of AI. Some prominent Christian thinkers, including Rod Dreher and Paul Kingsnorth, are genuinely concerned that AI could serve as a conduit for demonic forces. The Christian who is serious about the reality of spiritual warfare should at least consider this possibility. Not to do so is a failure of wisdom. After all, “our struggle is not against flesh and blood, but against the rulers, against the [...] The Calvin University Wisdom in the Age of AI conference was exactly what we need at this cultural moment, even if some of the revelations it occasioned are troubling. Such conferences are useful barometers for current thinking. This one served a double function: making us wiser about AI technology and revealing a void in Christian scholarly engagement. [...] Of course, many of the speakers did their share of theology, as was encouraged by the conference organizers. But, evidently, nearly all Christian theologians and biblical scholars who saw the call for papers decided to stay home and leave this important wisdom work to scholars whose fields are more concerned with AI’s application than with the moral questions raised by its use. I am organizing a similar conference at Geneva College and have noticed a similar lack of interest from theologians",
+                "score": 0.44351006
+              }
+            ]
+          }
+        },
+        {
+          "tool": "format",
+          "args": {
+            "headline": "Tin AI hôm nay",
+            "items": [
+              {
+                "source": "fox10tv.com",
+                "summary": "MOBILE, Ala. (WALA) - Artificial intelligence is becoming a bigger part of everyday life, raising questions about what the technology could mean for workers and their jobs. Some economists believe AI poses a particular threat to entry-level and repetitive work, including call center, data entry and junior copywriting jobs, according to The Wall Street Journal. Those tasks may be easier to automate. But AI could also create opportunities. A Bloomberg article points to potential job growth in construction and manufacturing as companies build data centers and produce the chips that power the technology. Some higher-skilled office workers could also benefit if AI helps them become more productive. The long-term impact on jobs remains unclear, but workers can take steps to prepare. Exploring AI chatbots, writing assistants and other tools may help people find ways to work more efficiently and develop skills that complement the technology.",
+                "title": "AI and your job: Threat or opportunity?",
+                "url": "https://www.fox10tv.com/2026/11/10/ai-your-job-threat-or-opportunity"
+              },
+              {
+                "source": "thebatt.com",
+                "summary": "I understand the appeal. College is busy. ... There is also something to be said about individuality. AI can generate an outline, rewrite a paragraph, summarize a reading or produce an entire essay before you have even finished your Celsius. But convenience does not necessarily facilitate education. ...",
+                "title": "Opinion: AI cannot replace being human – The Battalion",
+                "url": "https://thebatt.com/opinion/opinion-ai-cannot-replace-being-human"
+              },
+              {
+                "source": "reuters.com",
+                "summary": "However, both companies told Australian parliament last month that they would welcome laws requiring them to report data breaches carried out by their AI agents, acknowledging the decision to notify was currently at their discretion. Albanese said his centre-left Labor government would set up an AI regulator to oversee security controls throughout the development and deployment of AI systems, identify serious risks and conduct independent evaluations of AI models. ...",
+                "title": "Australia to mandate AI breach reporting, create regulator after OpenAI breach | Reuters",
+                "url": "https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10"
+              },
+              {
+                "source": "time.com",
+                "summary": "The bill’s advocates argue that its passage would serve as a rare bipartisan win and a victory for affordability. But critics, especially those on the left, are calling for Democrats to wait until the next Congress. ...",
+                "title": "Congress’s Permitting Bill Is a ‘Massive Giveaway’ to the AI Data Center Industry, Critics Warn",
+                "url": "https://time.com/article/2026/11/10/permitting-bill-data-centers"
+              },
+              {
+                "source": "firstthings.com",
+                "summary": "Also conspicuously absent was any serious attention to the possible spiritual warfare dimension of AI. Some prominent Christian thinkers, including Rod Dreher and Paul Kingsnorth, are genuinely concerned that AI could serve as a conduit for demonic forces. ...",
+                "title": "Wisdom in the Age of AI - First Things",
+                "url": "https://firstthings.com/wisdom-in-the-age-of-ai"
+              }
+            ],
+            "template": "bullets"
+          },
+          "result": {
+            "tool": "render_digest",
+            "template": "bullets",
+            "markdown": "- MOBILE, Ala. (WALA) - Artificial intelligence is becoming a bigger part of everyday life, raising questions about what the technology could mean for workers and their jobs. Some economists believe AI poses a particular threat to entry-level and repetitive work, including call ... - [fox10tv.com](https://www.fox10tv.com/2026/11/10/ai-your-job-threat-or-opportunity)\n- I understand the appeal. College is busy. ... There is also something to be said about individuality. AI can generate an outline, rewrite a paragraph, summarize a reading or produce an entire essay before you have even finished your Celsius. But convenience does not necessaril... - [thebatt.com](https://thebatt.com/opinion/opinion-ai-cannot-replace-being-human)\n- However, both companies told Australian parliament last month that they would welcome laws requiring them to report data breaches carried out by their AI agents, acknowledging the decision to notify was currently at their discretion. Albanese said his centre-left Labor governm... - [reuters.com](https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10)\n- The bill’s advocates argue that its passage would serve as a rare bipartisan win and a victory for affordability. But critics, especially those on the left, are calling for Democrats to wait until the next Congress. ... - [time.com](https://time.com/article/2026/11/10/permitting-bill-data-centers)\n- Also conspicuously absent was any serious attention to the possible spiritual warfare dimension of AI. Some prominent Christian thinkers, including Rod Dreher and Paul Kingsnorth, are genuinely concerned that AI could serve as a conduit for demonic forces. ... - [firstthings.com](https://firstthings.com/wisdom-in-the-age-of-ai)",
+            "item_count": 5
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T14:29:26"
+    }
+  ]
+}

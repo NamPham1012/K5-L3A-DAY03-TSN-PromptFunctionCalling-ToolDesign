@@ -1,0 +1,290 @@
+{
+  "transcript_id": "v7_groq_20261110T153200561313",
+  "version": "v7",
+  "artifact_version": "v7+p719a9ac99f61+t2c4b73356f32",
+  "prompt_hash": "719a9ac99f61ef6da6c511f8ecee0f85be608e4310feb311305a353c1184225d",
+  "tools_hash": "2c4b73356f3218ded2f5b898883c72c6298156ede29543117c5affc1398f9594",
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-11-10T15:32:00",
+  "updated_at": "2026-11-10T15:34:55",
+  "turns": [
+    {
+      "turn_index": 1,
+      "started_at": "2026-11-10T15:32:25",
+      "user": "Đăng bản tin này lên Telegram: Xin chào từ nhóm K5",
+      "status": "waiting_for_user",
+      "assistant_text": "Bạn có chắc muốn gửi tin nhắn \"Xin chào từ nhóm K5\" lên Telegram không?",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "clarify",
+              "args": {
+                "question": "Bạn có chắc muốn gửi tin nhắn \"Xin chào từ nhóm K5\" lên Telegram không?",
+                "response_type": "yes_no"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "clarify",
+              "args": {
+                "question": "Bạn có chắc muốn gửi tin nhắn \"Xin chào từ nhóm K5\" lên Telegram không?",
+                "response_type": "yes_no"
+              },
+              "result": {
+                "tool": "ask_user",
+                "question": "Bạn có chắc muốn gửi tin nhắn \"Xin chào từ nhóm K5\" lên Telegram không?",
+                "response_type": "yes_no",
+                "options": [],
+                "awaiting_user": true
+              }
+            }
+          ]
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "clarify",
+          "args": {
+            "question": "Bạn có chắc muốn gửi tin nhắn \"Xin chào từ nhóm K5\" lên Telegram không?",
+            "response_type": "yes_no"
+          },
+          "result": {
+            "tool": "ask_user",
+            "question": "Bạn có chắc muốn gửi tin nhắn \"Xin chào từ nhóm K5\" lên Telegram không?",
+            "response_type": "yes_no",
+            "options": [],
+            "awaiting_user": true
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T15:32:29"
+    },
+    {
+      "turn_index": 2,
+      "started_at": "2026-11-10T15:32:55",
+      "user": "có",
+      "status": "answered",
+      "assistant_text": "✅ Tin nhắn đã được gửi lên Telegram: “Xin chào từ nhóm K5”.",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "send",
+              "args": {
+                "confirmed": true,
+                "text": "Xin chào từ nhóm K5"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "send",
+              "args": {
+                "confirmed": true,
+                "text": "Xin chào từ nhóm K5"
+              },
+              "result": {
+                "tool": "send_telegram",
+                "status": "sent"
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "✅ Tin nhắn đã được gửi lên Telegram: “Xin chào từ nhóm K5”.",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "send",
+          "args": {
+            "confirmed": true,
+            "text": "Xin chào từ nhóm K5"
+          },
+          "result": {
+            "tool": "send_telegram",
+            "status": "sent"
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T15:33:02"
+    },
+    {
+      "turn_index": 3,
+      "started_at": "2026-11-10T15:33:51",
+      "user": "Đăng tin X lên Telegram",
+      "status": "waiting_for_user",
+      "assistant_text": "Bạn có thể cung cấp nội dung tin muốn đăng lên Telegram?",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "clarify",
+              "args": {
+                "question": "Bạn có thể cung cấp nội dung tin muốn đăng lên Telegram?",
+                "response_type": "text"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "clarify",
+              "args": {
+                "question": "Bạn có thể cung cấp nội dung tin muốn đăng lên Telegram?",
+                "response_type": "text"
+              },
+              "result": {
+                "tool": "ask_user",
+                "question": "Bạn có thể cung cấp nội dung tin muốn đăng lên Telegram?",
+                "response_type": "text",
+                "options": [],
+                "awaiting_user": true
+              }
+            }
+          ]
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "clarify",
+          "args": {
+            "question": "Bạn có thể cung cấp nội dung tin muốn đăng lên Telegram?",
+            "response_type": "text"
+          },
+          "result": {
+            "tool": "ask_user",
+            "question": "Bạn có thể cung cấp nội dung tin muốn đăng lên Telegram?",
+            "response_type": "text",
+            "options": [],
+            "awaiting_user": true
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T15:33:53"
+    },
+    {
+      "turn_index": 4,
+      "started_at": "2026-11-10T15:34:25",
+      "user": "nội dung là NAM dz",
+      "status": "waiting_for_user",
+      "assistant_text": "Bạn có chắc muốn gửi tin nhắn 'NAM dz' lên Telegram không?",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "clarify",
+              "args": {
+                "question": "Bạn có chắc muốn gửi tin nhắn 'NAM dz' lên Telegram không?",
+                "response_type": "yes_no"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "clarify",
+              "args": {
+                "question": "Bạn có chắc muốn gửi tin nhắn 'NAM dz' lên Telegram không?",
+                "response_type": "yes_no"
+              },
+              "result": {
+                "tool": "ask_user",
+                "question": "Bạn có chắc muốn gửi tin nhắn 'NAM dz' lên Telegram không?",
+                "response_type": "yes_no",
+                "options": [],
+                "awaiting_user": true
+              }
+            }
+          ]
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "clarify",
+          "args": {
+            "question": "Bạn có chắc muốn gửi tin nhắn 'NAM dz' lên Telegram không?",
+            "response_type": "yes_no"
+          },
+          "result": {
+            "tool": "ask_user",
+            "question": "Bạn có chắc muốn gửi tin nhắn 'NAM dz' lên Telegram không?",
+            "response_type": "yes_no",
+            "options": [],
+            "awaiting_user": true
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T15:34:26"
+    },
+    {
+      "turn_index": 5,
+      "started_at": "2026-11-10T15:34:52",
+      "user": "có",
+      "status": "answered",
+      "assistant_text": "Tin đã được gửi thành công.",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "send",
+              "args": {
+                "confirmed": true,
+                "text": "NAM dz"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "send",
+              "args": {
+                "confirmed": true,
+                "text": "NAM dz"
+              },
+              "result": {
+                "tool": "send_telegram",
+                "status": "sent"
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Tin đã được gửi thành công.",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "send",
+          "args": {
+            "confirmed": true,
+            "text": "NAM dz"
+          },
+          "result": {
+            "tool": "send_telegram",
+            "status": "sent"
+          }
+        }
+      ],
+      "ended_at": "2026-11-10T15:34:55"
+    }
+  ]
+}

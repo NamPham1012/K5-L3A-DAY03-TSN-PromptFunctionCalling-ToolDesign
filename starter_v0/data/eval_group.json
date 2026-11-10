@@ -1,6 +1,24 @@
 {
   "dataset_id": "day04_v2_research_group",
   "dataset_role": "group",
+  "description": "Case do NHÓM tự viết thêm để cover thêm trường hợp. Mỗi case cần: id, phase='B', query HOẶC turns, failure_type (thuộc allowed_failure_types), và expect (tool_calls[...] hoặc no_tool=true). Nên kèm metadata.what_it_tests.",
+  "allowed_failure_types": ["wrong_tool", "wrong_arg_value", "wrong_boundary", "unnecessary_tool", "out_of_scope", "missing_info"],
+  "cases": [
+    {
+      "id": "G01_wiki_background_routing",
+      "phase": "B", "suite": "group",
+      "query": "Giải thích kiến trúc Transformer trong deep learning là gì?",
+      "failure_type": "wrong_tool",
+      "expect": {"tool_calls": [{"name": "wiki", "args": {}}]},
+      "metadata": {"skill": "routing_wiki_background", "difficulty": "easy", "what_it_tests": "Câu hỏi kiến thức nền ổn định (định nghĩa/khái niệm) → wiki, không phải lookup (tin tức) hay papers (bài báo)."}
+    },
+    {
+      "id": "G02_wiki_vietnamese_source",
+      "phase": "B", "suite": "group",
+      "query": "Tra Wikipedia tiếng Việt xem Hồ Gươm có lịch sử thế nào",
+      "failure_type": "wrong_arg_value",
+      "expect": {"tool_calls": [{"name": "wiki", "args": {"lang": "vi"}}]},
+      "metadata": {"skill": "wiki_lang_arg", "difficulty": "easy", "what_it_tests": "User yêu cầu Wikipedia tiếng Việt → wiki với lang=vi (không để mặc định en)."}
   "description": "10 case: 5 single-turn (G_S01–G_S05), 5 multi-turn (G_M01–G_M05), đánh giá routing, đối số, ngữ cảnh, ranh giới xác nhận và thông tin thiếu. Khi thành viên B hoàn tất tool mới, bổ sung hoặc thay thế một case để kiểm tra tool mới.",
   "allowed_failure_types": [
     "wrong_tool",

@@ -15,6 +15,17 @@ def err(tool: str, exc: Exception) -> dict[str, Any]:
     return {"tool": tool, "error": type(exc).__name__, "message": str(exc)}
 
 
+def clamp_int(value: Any, default: int, low: int = 1, high: int = 20) -> int:
+    """Coerce model-supplied numbers ("5", 0, None, 99) into a sane range."""
+    try:
+        number = int(value)
+    except (TypeError, ValueError):
+        number = default
+    if number < low:
+        number = default
+    return min(number, high)
+
+
 def domain(url: str) -> str:
     try:
         return urlparse(url).netloc.replace("www.", "")
@@ -23,7 +34,9 @@ def domain(url: str) -> str:
 
 
 def fold_text(text: str) -> str:
-    decomposed = unicodedata.normalize("NFD", text.lower())
+    # "đ" has no NFD decomposition, so strip-accents alone would leave it and the
+    # [a-z0-9] tokenizer in terms() would then drop it ("đăng" -> "ang").
+    decomposed = unicodedata.normalize("NFD", text.lower().replace("đ", "d"))
     return "".join(ch for ch in decomposed if unicodedata.category(ch) != "Mn")
 
 

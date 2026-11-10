@@ -11,6 +11,7 @@ from env_loader import load_lab_env
 from providers import make_provider
 from providers.base import ToolCall
 from tools import TOOL_FUNCTIONS, load_tool_declarations, to_openai_tools
+from tools.send.tool import guard_send_call, send_telegram
 from versioning import artifact_version_dict, build_artifact_version
 
 
@@ -41,7 +42,7 @@ def trim_history(history: list[dict[str, str]], window: int) -> list[dict[str, s
     return history[-window * 2:]
 
 
-def execute_tool_call(call: ToolCall) -> dict[str, Any]:
+def execute_tool_call(call: ToolCall, messages: list[dict[str, str]] | None = None) -> dict[str, Any]:
     func = TOOL_FUNCTIONS.get(call.name)
     if not func:
         return {
@@ -49,6 +50,10 @@ def execute_tool_call(call: ToolCall) -> dict[str, Any]:
             "args": call.args,
             "result": {"error": "unknown_tool", "message": f"No local implementation for {call.name}"},
         }
+    # Matched by function, not name, so the gate survives a tool rename in tools.yaml.
+    blocked = guard_send_call(call.args, messages) if func is send_telegram else None
+    if blocked:
+        return {"tool": call.name, "args": call.args, "result": blocked}
     try:
         result = func(**call.args)
     except Exception as exc:
@@ -113,7 +118,7 @@ def run_model_tool_loop(
 
         for call in calls:
             print(f"🔧 {call.name}({json.dumps(call.args, ensure_ascii=False, sort_keys=True)})")
-            event = execute_tool_call(call)
+            event = execute_tool_call(call, working_messages)
             round_record["tool_results"].append(event)
             all_tool_events.append(event)
 

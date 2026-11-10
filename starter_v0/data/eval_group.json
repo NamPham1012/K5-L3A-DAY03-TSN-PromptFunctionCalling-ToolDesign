@@ -19,6 +19,310 @@
       "failure_type": "wrong_arg_value",
       "expect": {"tool_calls": [{"name": "wiki", "args": {"lang": "vi"}}]},
       "metadata": {"skill": "wiki_lang_arg", "difficulty": "easy", "what_it_tests": "User yêu cầu Wikipedia tiếng Việt → wiki với lang=vi (không để mặc định en)."}
+  "description": "10 case: 5 single-turn (G_S01–G_S05), 5 multi-turn (G_M01–G_M05), đánh giá routing, đối số, ngữ cảnh, ranh giới xác nhận và thông tin thiếu. Khi thành viên B hoàn tất tool mới, bổ sung hoặc thay thế một case để kiểm tra tool mới.",
+  "allowed_failure_types": [
+    "wrong_tool",
+    "wrong_arg_value",
+    "wrong_boundary",
+    "unnecessary_tool",
+    "out_of_scope",
+    "missing_info"
+  ],
+  "cases": [
+    {
+      "id": "G_S01_timeline_specific_limit",
+      "phase": "B",
+      "suite": "group",
+      "query": "Lấy đúng 7 tweet gần đây nhất từ tài khoản @elonmusk.",
+      "failure_type": "wrong_arg_value",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "timeline",
+            "args": {
+              "screenname": "elonmusk",
+              "limit": 7
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "skill": "single_timeline_limit",
+        "difficulty": "easy",
+        "what_it_tests": "Tìm đúng timeline và giữ limit=7, screenname không có @."
+      }
+    },
+    {
+      "id": "G_S02_social_top_limit",
+      "phase": "B",
+      "suite": "group",
+      "query": "Tìm 8 bài đăng nổi bật nhất về Claude trên Twitter, ưu tiên Top thay vì Latest.",
+      "failure_type": "wrong_arg_value",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "social_search",
+            "args": {
+              "query": "Claude",
+              "search_type": "Top",
+              "limit": 8
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "skill": "single_social_top",
+        "difficulty": "medium",
+        "what_it_tests": "Chủ đề trên X/Twitter cần social_search; chọn Top và limit=8."
+      }
+    },
+    {
+      "id": "G_S03_news_month",
+      "phase": "B",
+      "suite": "group",
+      "query": "Tìm tin tức robotics trong tháng này trên web.",
+      "failure_type": "wrong_arg_value",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "lookup",
+            "args": {
+              "query": "robotics",
+              "topic": "news",
+              "timeframe": "month"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "skill": "single_news_timeframe",
+        "difficulty": "medium",
+        "what_it_tests": "Tin tức robotics trong tháng: lookup với topic=news, timeframe=month."
+      }
+    },
+    {
+      "id": "G_S04_policy_privacy",
+      "phase": "B",
+      "suite": "group",
+      "query": "Theo quy định nội bộ của công ty, có được đưa dữ liệu khách hàng lên AI công cộng không?",
+      "failure_type": "wrong_tool",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "policy",
+            "args": {
+              "policy_area": "data_privacy"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "skill": "single_policy_route",
+        "difficulty": "medium",
+        "what_it_tests": "Câu hỏi về quy tắc bảo mật nội bộ nên tra policy, không tìm web."
+      }
+    },
+    {
+      "id": "G_S05_send_needs_confirmation",
+      "phase": "B",
+      "suite": "group",
+      "query": "Gửi bản tin AI này ra ngoài giúp tôi ngay nhé, tôi chưa xác nhận nội dung cuối.",
+      "failure_type": "wrong_boundary",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "clarify",
+            "args": {
+              "response_type": "yes_no"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "skill": "single_send_confirmation",
+        "difficulty": "hard",
+        "what_it_tests": "Đề nghị gửi khi chưa xác nhận: hỏi xác nhận trước, không gọi send ngay."
+      }
+    },
+    {
+      "id": "G_M01_correct_limit",
+      "phase": "B",
+      "suite": "group",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Lấy 10 tweet mới nhất của Elon Musk."
+        },
+        {
+          "role": "user",
+          "content": "Thôi, chỉ lấy 3 tweet thôi."
+        },
+        {
+          "role": "user",
+          "content": "Vẫn của Elon Musk nhé."
+        }
+      ],
+      "failure_type": "wrong_arg_value",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "timeline",
+            "args": {
+              "screenname": "elonmusk",
+              "limit": 3
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "skill": "multi_correct_limit",
+        "difficulty": "hard",
+        "what_it_tests": "Giữ tài khoản từ lượt trước, dùng limit mới nhất (3 thay cho 10)."
+      }
+    },
+    {
+      "id": "G_M02_change_source",
+      "phase": "B",
+      "suite": "group",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Tìm những tweet về OpenAI."
+        },
+        {
+          "role": "user",
+          "content": "Đổi ý, tôi muốn xem tin tức trên web thay vì Twitter."
+        },
+        {
+          "role": "user",
+          "content": "Chỉ lấy tin OpenAI trong tuần này."
+        }
+      ],
+      "failure_type": "wrong_tool",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "lookup",
+            "args": {
+              "query": "OpenAI",
+              "topic": "news",
+              "timeframe": "week"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "skill": "multi_switch_source",
+        "difficulty": "hard",
+        "what_it_tests": "Chuyển nguồn Twitter sang tin web, giữ chủ đề OpenAI và tuần này."
+      }
+    },
+    {
+      "id": "G_M03_url_after_clarify",
+      "phase": "B",
+      "suite": "group",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Tóm tắt bài báo này cho tôi."
+        },
+        {
+          "role": "user",
+          "content": "Link đây: https://example.com/research-report"
+        },
+        {
+          "role": "user",
+          "content": "Bạn chỉ cần đọc đúng link tôi vừa gửi."
+        }
+      ],
+      "failure_type": "missing_info",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "fetch",
+            "args": {
+              "url": "https://example.com/research-report"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "skill": "multi_resolve_url",
+        "difficulty": "medium",
+        "what_it_tests": "Thông tin URL được cung cấp ở turn sau; gọi fetch đúng URL, không hỏi lại."
+      }
+    },
+    {
+      "id": "G_M04_topic_correction",
+      "phase": "B",
+      "suite": "group",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Tìm 5 tweet Top về GPT."
+        },
+        {
+          "role": "user",
+          "content": "Đổi chủ đề sang Gemini nhé."
+        },
+        {
+          "role": "user",
+          "content": "Giữ nguyên số lượng và cách sắp xếp."
+        }
+      ],
+      "failure_type": "wrong_arg_value",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "social_search",
+            "args": {
+              "query": "Gemini",
+              "search_type": "Top",
+              "limit": 5
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "skill": "multi_topic_correction",
+        "difficulty": "hard",
+        "what_it_tests": "Duy trì search_type Top, limit=5; cập nhật chủ đề từ GPT sang Gemini."
+      }
+    },
+    {
+      "id": "G_M05_missing_handle",
+      "phase": "B",
+      "suite": "group",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Tôi muốn đọc tweet mới nhất của một người."
+        },
+        {
+          "role": "user",
+          "content": "Lấy 4 bài gần đây thôi."
+        },
+        {
+          "role": "user",
+          "content": "Bạn tìm giúp tôi nhé, tôi chưa nói tài khoản nào."
+        }
+      ],
+      "failure_type": "missing_info",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "clarify",
+            "args": {
+              "response_type": "text"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "skill": "multi_missing_account",
+        "difficulty": "medium",
+        "what_it_tests": "Sau nhiều turn vẫn không xác định được tác giả tweet; cần hỏi lại, không đoán."
+      }
     }
   ]
 }

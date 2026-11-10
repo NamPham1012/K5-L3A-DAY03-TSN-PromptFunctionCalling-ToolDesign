@@ -16,22 +16,22 @@
 tools:
   # ---------------- Core tools ----------------
   - name: clarify
-    description: "Gửi một câu hỏi cho người dùng."
+    description: "CHỈ dùng khi KHÔNG THỂ suy ra thông tin bắt buộc: thiếu hẳn tài khoản/URL mà không có manh mối (vd 'tóm tắt bài này' nhưng không có link), hoặc để xác nhận trước hành động gửi/đăng. Nếu đã có tên người/chủ đề đủ để route, KHÔNG clarify. Dùng yes_no để xác nhận hành động, text để xin thông tin."
     parameters:
       type: object
       properties:
         question: {type: string, default: "", description: "Câu hỏi"}
-        response_type: {type: string, enum: [text, yes_no, choice], default: "text", description: "Kiểu trả lời"}
-        options: {type: array, default: [], items: {type: string}, description: "Các lựa chọn"}
+        response_type: {type: string, enum: [text, yes_no, choice], default: "text", description: "yes_no khi xác nhận một hành động gửi/đăng; text khi xin thông tin còn thiếu; choice khi đưa lựa chọn"}
+        options: {type: array, default: [], items: {type: string}, description: "Các lựa chọn khi response_type=choice"}
       required: [question]
 
   - name: timeline
-    description: "Lấy các bài đăng gần đây."
+    description: "Lấy bài đăng gần đây CỦA MỘT tài khoản cụ thể. Nếu user nêu tên người nổi tiếng, hãy TỰ map sang handle (Sam Altman→sama, Elon Musk→elonmusk, Andrej Karpathy→karpathy) rồi gọi tool — KHÔNG hỏi lại. Chỉ clarify khi hoàn toàn không biết user muốn tài khoản nào."
     parameters:
       type: object
       properties:
-        screenname: {type: string, default: "", description: "Tên tài khoản"}
-        limit: {type: integer, default: 5, description: "Số lượng"}
+        screenname: {type: string, default: "", description: "Handle Twitter, KHÔNG có @ (vd: sama, elonmusk). Tự suy từ tên nếu là người nổi tiếng."}
+        limit: {type: integer, default: 5, description: "Số bài, lấy đúng số user yêu cầu"}
       required: [screenname]
 
   - name: social_search
@@ -74,7 +74,7 @@ tools:
           description: "Danh sách item"
           items:
             type: object
-            properties:
+            properties: 
               title: {type: string}
               url: {type: string}
               source: {type: string}
@@ -86,12 +86,12 @@ tools:
 
   # ---------------- Bonus tools ----------------
   - name: send
-    description: "Gửi một đoạn văn bản đi."
+    description: "Gửi text lên Telegram channel. Đây là hành động GHI: chỉ được gọi khi confirmed=true (người dùng đã xác nhận qua clarify yes_no). Nếu chưa xác nhận không gọi send - hay gọi clarify response_type=yes_no trước"
     parameters:
       type: object
       properties:
-        text: {type: string, default: "", description: "Nội dung"}
-        confirmed: {type: boolean, default: false, description: "Cờ xác nhận"}
+        text: {type: string, default: "", description: "Nội dung gửi đi"}
+        confirmed: {type: boolean, default: false, description: "Chỉ true khi người dùng xác nhận"}
       required: [text]
 
   - name: policy
